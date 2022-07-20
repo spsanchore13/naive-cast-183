@@ -1,0 +1,480 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="P_styles/OMstyle.css">
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing: border-box;
+          
+        }
+        div#P_box>*{
+            margin-bottom: 60px;
+        }
+
+        #P_nav>a,#P_nav>span,#P_nav>p{
+            color: #9BA6BD;
+            font-size: 13px;
+        }
+        #P_tital>p{
+            font-weight: 700;
+            font-size:26px;
+            line-height: 33px;
+            color:#4f585e
+        }
+#P_box{
+    width: 85%;
+            margin: auto;
+}
+        #P_nav{
+            display:flex;
+            align-items: center;
+        }
+#P_search_order{
+    display:grid;
+    grid-template-columns: 2fr 2fr;
+}
+#P_search_order>div:first-child{
+    background-color:#10847E;
+    padding: 50px 0px ;
+    width: fit-content;
+    border-radius: 8px;
+    border: none;
+    
+    
+}
+
+div#P_search_order>div:first-child>*{
+    margin-bottom: 26px;
+    text-align: center;
+}
+#P_search_order>div:nth-child(1)>div:nth-child(1){
+            display:flex;
+            padding: 0px 20px;
+        }
+       
+        #P_search_order>div:nth-child(1)>div:nth-child(1)>div:nth-child(1),
+        #P_search_order>div:nth-child(1)>div:nth-child(1)>div:nth-child(2),
+#P_search_order>div:nth-child(1)>div:nth-child(1)>div:nth-child(3)
+        {
+            display: flex;
+            gap: 15px;
+        }
+        #P_search_order>div:nth-child(1)>div:nth-child(1)>div:nth-child(1)>img,
+        #P_search_order>div:nth-child(1)>div:nth-child(1)>div:nth-child(2)>img,
+        #P_search_order>div:nth-child(1)>div:nth-child(1)>div:nth-child(3)>img{
+            width:9%;
+        }
+        #P_search_order>div:nth-child(3)>img{
+width:2%;
+        }
+
+        #P_search_order>div:nth-child(1)>div:nth-child(3)>div:nth-child(1){
+            display:flex;
+            align-items: center;
+
+        }
+        #P_search_order>div:nth-child(1)>div:nth-child(3)>img{
+            width:21px
+        }
+        #P_search_order>div:nth-child(1)>div:nth-child(3){
+            padding: 0 10px;
+    display: flex;
+    align-items: center;
+    /* position: absolute; */
+    z-index: 20;
+    border: 1px solid;
+    column-gap: 52px;
+    margin: auto;
+    width: fit-content;
+    background: white;
+    width: fit-content;
+    padding: 14px 6px;
+        }
+        #P_search_order>div:nth-child(1){
+            border: 1px solid black;
+            width:fit-content
+        }
+        #P_search_order>div:nth-child(1)>div:nth-child(3)>div:nth-child(1)>p,
+        #P_search_order>div:nth-child(1)>div:nth-child(3)>div:nth-child(1)>span{
+            font-size: 16px;
+            font-weight: 600px;
+            line-height: 20px;
+            color:#6DBCEA
+        }
+
+.P_section2{
+    margin:auto;
+}
+        .P_section2>div:nth-child(1),.P_section2>div:nth-child(2){
+            border:1px solid black;
+            display:flex;
+            column-gap: 10px;
+        }
+
+
+        .P_section2>div:nth-child(1)>img,.P_section2>div:nth-child(2)>img{
+            width:9%;
+        }
+
+
+#exless{
+    display: none;
+
+}
+
+
+#P_q_and_a>div:nth-child(1)>div:nth-child(1),
+#P_q_and_a>div:nth-child(2)>div:nth-child(1),
+#P_q_and_a>div:nth-child(3)>div:nth-child(1),
+#P_q_and_a>div:nth-child(4)>div:nth-child(1),
+#P_q_and_a>div:nth-child(5)>div:nth-child(1),
+#P_q_and_a>div:nth-child(6)>div:nth-child(1),
+#P_q_and_a>div:nth-child(7)>div:nth-child(1),
+#P_q_and_a>div:nth-child(8)>div:nth-child(1),
+#P_q_and_a>div:nth-child(9)>div:nth-child(1),
+#P_q_and_a>div:nth-child(10)>div:nth-child(1)
+{
+    display:flex;
+    align-items: center;
+}
+div#P_q_and_a>*{
+    border:1px solid black;
+    padding:10px 20px
+}
+
+
+div#div#P_q_and_a>*{
+    margin-bottom: 15px;
+}
+#P_adv{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+#P_adv>div:nth-child(1)>img,#P_adv>div:nth-child(2)>img,#P_adv>div:nth-child(3)>img{
+width:9%
+}
+    </style>
+
+</head>
+<body>
+    <div id="P_cont">
+        <div id="nav"></div>
+        <div id="P_box">
+            <div id="P_nav">
+                <a href="">HOME</a>
+                <span class="material-symbols-outlined P_rightarrow">
+                    chevron_right
+                    </span>
+                    <p>Order Medicines Online</p>
+            </div>
+            <div id="P_tital">
+                <p>Order Medicines Online</p>
+            </div>
+            <div id="P_search_order">
+                <div>
+                    <div>
+                        <div style="width: 184px">
+                            <img src="P_icons/discount.svg"/>
+                            <p>Flat 15% Off</p>
+                          </div>
+                          <div style="width: 184px">
+                            <img src="P_icons/varify.svg"/>
+                            <p>1 Lakh+ Products</p>
+                          </div>
+                          <div style="width: 184px">
+                            <img src="P_icons/return.svg"/>
+                            <p>Easy Returns</p>
+                          </div>
+                    </div>
+                    <p>Search for Medicines / Healthcare Products</p>
+                    <div>
+                        <div>
+                            <p>Select Pincode</p>
+                            <span class="material-symbols-outlined P_dropDown">
+                                expand_more
+                                </span>
+                        </div>
+                        <h4>Search for Medicines / Healthcare Products</h4>
+                        <img src="P_icons/search.svg"/>
+                    </div>
+                </div>
+                <div class="P_section2">
+                    <div>
+                        <img src="P_icons/list.svg"/>
+                        <p>Order Via Prescription</p>
+                    </div>
+                    <div>
+                        <img src="P_icons/no_list.svg"/>
+                        <p>Don't have a Prescription</p>
+                    </div>
+                </div>
+            </div>
+            <div id="P_offer">
+                <h4>All Offers</h4>
+            </div>
+        
+                <!-- <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'></div> -->
+                <div id="carousel" data-flickity='{"autoPlay":true,"wrapAround": true }'>
+                    <div class="carousel-cell cero1"><img src="P_icons/oimg1.PNG"/></div>
+                    <div class="carousel-cell cero1"><img src="P_icons/oimg2.PNG"/></div>
+                    <div class="carousel-cell cero1"><img src="P_icons/oimg3.PNG"/></div>
+                    <div class="carousel-cell cero1"><img src="P_icons/oimg4.PNG"/></div>
+                    <div class="carousel-cell cero1"><img src="P_icons/omg5.PNG"/></div>
+                    <div class="carousel-cell cero1"><img src="P_icons/oimg6.PNG"/></div>
+                    <div class="carousel-cell cero1"><img src="P_icons/oimg7.PNG"/></div>
+                    <div class="carousel-cell cero1"><img src="P_icons/oimg8.PNG"/></div>
+                </div>
+                <div class="carousel" data-flickity='{"autoPlay":true,"wrapAround": true }'>
+                    <div class="carousel-cell cero2"><img src="P_icons/img1.jpg"/></div>
+                    <div class="carousel-cell cero2"><img src="P_icons/img2.jpg"/></div>
+                    <div class="carousel-cell cero2"><img src="P_icons/img3.jpg"/></div>
+                    <div class="carousel-cell cero2"><img src="P_icons/img4.jpg"/></div>
+                </div>
+            
+            <div id="P_testimonies">
+                <h4>What our customers have to say</h4>
+            </div>
+            <div id="carousel" data-flickity='{"autoPlay":true,"wrapAround": true }'>
+                <div class="carousel-cell cero1"><img src="P_icons/timg1.PNG"/></div>
+                    <div class="carousel-cell cero3"><img src="P_icons/timg2.PNG"/></div>
+                    <div class="carousel-cell cero3"><img src="P_icons/timg3.PNG"/></div>
+                    <div class="carousel-cell cero3"><img src="P_icons/timg4.PNG"/></div>
+                    <div class="carousel-cell cero3"><img src="P_icons/timg5.PNG"/></div>
+                    <div class="carousel-cell cero3"><img src="P_icons/timg6.PNG"/></div>
+                    <div class="carousel-cell cero3"><img src="P_icons/timg7.PNG"/></div>
+            </div>
+            <div id="P_doc_1">
+                <h4>India's No. 1 Medicine Delivery App</h4>
+                <p>The concept of medicine home delivery has been taken to a new level by the PharmEasy online medicine delivery app. You can use the PharmEasy online medicine delivery app to browse through an extensive range of medicines. Each medicine undergoes a 3-step quality check.</p>
+                <p>Whatever be your medicine requirement, you are sure to locate it in this online pharmacy. All you have to do then is to add it to your cart and place the order and get your order delivered quickly. India’s beloved online medicine delivery app makes sure that you get your medicines in record time because we know how vital time is in any treatment. Sit back, and we will have all your medical necessities delivered to your doorstep.</p>
+
+                <h4>Online Medicine - Your Online Medical Store in India
+                </h4>
+                <p>Tired of walking all the way to your local medicine store? Worried that going out is risky during the current times? Order medicines online at PharmEasy, India’s trusted online medicine app. With more than 1 lakh medicines always in stock, you are sure to find what you are looking for, and that too at affordable prices!</p>
+                <p>Besides, extremely stringent sanitization norms are followed at your favourite online medical store. PharmEasy takes the safety of customers and employees very seriously.</p>
+
+                <h4>Reasons To Buy Medicine Online From PharmEasy</h4>
+                <p>Here are a few reasons that will convince you to give online medicine order through the PharmEasy app -</p>
+<ul>
+    <li>1,200+ cities and 20,000+ Pin codes served</li>
+    <li>Express Delivery</li>
+    <li>1 Lakh+ medicines available</li>
+    <li>Cash on delivery option available</li>
+    <li>Attractive offers</li>
+    <li>Cashback option through wallet</li>
+    <li>Stringent quality checks
+    </li>
+    <li>Garnered the trust of more than 10 million users who have made an online purchase through PharmEasy</li>
+</ul>
+
+<h4>Get 3-Step Quality-checked Medicines</h4>
+<p>PharmEasy is a one-stop-shop for all your healthcare needs. We have 1L+ products for you to choose from. Buy medicines online at affordable prices from the comforts of your home in just a few clicks and get them delivered at your doorstep.
+    The entire process of shopping for medicines is hassle-free and convenient. All you have to do is search for the products you need on our website or app, add to cart and then proceed with the checkout process.
+    With our scheduled refill reminder, you don’t even need to keep track of your refill dates.
+    What’s more, we have great offers, with added discounts and massive e-wallet cashbacks on purchasing medicines!</p>
+
+            </div>
+            <div id="P_q_and_a">
+                <div>
+                    <div>
+                    <h4>Is buying Medicine inlone safe?</h4>
+                    <span class="material-symbols-outlined " id="exmore">
+expand_more
+</span>
+<span class="material-symbols-outlined" id="exless">
+    expand_less
+    </span>
+
+                    </div>
+                    <p class="PPcom">Absolutely! All our medicines undergo a three-step quality check process to ensure they are of high quality.
+                        We source our products only from licensed retail pharmacies.
+                        PharmEasy is used by 5M+ users across 1.2k+ cities in India incl. Bangalore, Delhi, Mumbai, Kolkata, Hyderabad, Gurgaon, Noida, Pune, etc. for purchasing medicines online.</p>
+                </div>
+                <div>
+                    <div>
+                    <h4>Why choose ous for your medicine home delivery</h4>
+                    <span class="material-symbols-outlined " id="exmore">
+expand_more
+</span>
+
+<span class="material-symbols-outlined" id="exless">
+    expand_less
+    </span>
+
+                    </div>
+                    <ul class="PPcom">
+                        <li>Used by 5M+ customers</li>
+                        <li>Delivery in 24-48* hours</li>
+                        <li>Over 1L+ meds and healthcare products for you to select from</li>
+                        <li>3-step quality-checked products</li>
+                        <li>PharmEasy Plus subscription with exclusive benefits</li>
+                        <li>We deliver in 22k+ pin codes across 1.2k+ cities</li>
+                        <li>Scheduled refill reminders</li>
+                        <li>Attractive deals and e-wallet cashbacks</li>
+                        <li>A highly capable team of experienced pharmacists and healthcare professionals</li>
+                        <li>Cash-on-delivery available</li>
+                    </ul>
+                </div>
+                <div>
+                    <div>
+                    <h4>How do I order medicine from PharmEasy</h4>
+                    <span class="material-symbols-outlined " id="exmore">
+expand_more
+</span>
+<span class="material-symbols-outlined" id="exless">
+    expand_less
+    </span>
+
+
+                    </div>
+
+                    <ol class="PPcom">
+                        <li>Visit our website or open our online medicine app on your phone.
+                        </li>
+                        <li>Upload a valid doctor’s prescription and search from our list of medicines.
+                        </li>
+                        <li>Enter the address where you want your package to be delivered.
+                        </li>
+                        <li>Our partner retailer will call you to confirm the order.
+                        </li>
+                        <li>The medicine is packed by the pharmacist.
+                        </li>
+                        <li>Our delivery person will deliver the package at your doorstep.
+                        </li>
+
+                    </ol>
+                </div>
+                <div>
+                    <div>
+                    <h4>When will PharmEasy deliver my medicine</h4>
+                    <span class="material-symbols-outlined " id="exmore">expand_more</span>
+                    <span class="material-symbols-outlined" id="exless">
+    expand_less
+    </span>
+                    
+                    </div>
+
+                    <p class="PPcom">Once you purchase your medicines online with us, you will get it within 24-48* hours.
+                        *T&C: The delivery time might vary depending on the delivery location.</p>
+                </div>
+                <div>
+                    <div>
+                    <h4>Do I get descount/cashback on ordering medicine online with pharmacy</h4>
+                    <span class="material-symbols-outlined " id="exmore">
+expand_more
+</span>
+<span class="material-symbols-outlined" id="exless">
+    expand_less
+    </span>
+
+                    </div>
+
+                    <p class="PPcom">Yes, you can get huge discounts and massive e-wallet cashback on purchasing medicines.</p>
+                </div>
+                <div>
+                    <div>
+                    <h4>If medicine I want to order is unavailable what should I do ?</h4>
+                    <span class="material-symbols-outlined " id="exmore">
+expand_more
+</span>
+<span class="material-symbols-outlined" id="exless">
+    expand_less
+    </span>
+
+                    </div>
+
+                    <p class="PPcom">You can log in from the PharmEasy app and click on the ‘Notify Me’ option for that particular product or medicine. You will be notified as soon as the product is back in stock.</p>
+                </div>
+                <div>
+                    <div>
+                    <h4>When will i recive in my order</h4>
+                    <span class="material-symbols-outlined " id="exmore">
+expand_more
+</span>
+<span class="material-symbols-outlined" id="exless">
+    expand_less
+    </span>
+
+                    </div>
+
+                    <p class="PPcom">Your order will be delivered as per the 'Estimated Delivery Date' committed at the time of order placement. You can check this by selecting your order from the "My Orders" section. Keep a lookout for our order delivery updates.
+                        Note: Due to the current COVID-19 crisis, the delivery date may not be as per usual timelines and we request you to bear with us. But rest assured, we are working round the clock to deliver your order as soon as possible.</p>
+                </div>
+                <div>
+                    <div>
+                    <h4>What is the shelf life of medicin that I order</h4>
+                    <span class="material-symbols-outlined " id="exmore">
+expand_more
+</span>
+<span class="material-symbols-outlined" id="exless">
+    expand_less
+    </span>
+
+                    </div>
+                    <p class="PPcom">We ensure that the shelf life of the medicines being supplied by our partner retailers is a minimum of 3 months from the date of delivery.</p>
+                </div>
+                <div>
+                    <div>
+                    <h4>How can I change my order </h4>
+                    <span class="material-symbols-outlined " id="exmore">
+expand_more
+</span>
+<span class="material-symbols-outlined" id="exless">
+    expand_less
+    </span>
+
+                    </div>
+                    <p class="PPcom">Unfortunately, once your order is confirmed, it cannot be modified. You can place a fresh order.</p>
+                </div>
+                <div>
+                    <div>
+
+                        <h4 onclick="runCom()">How do I cancel my order </h4>
+                        <span class="material-symbols-outlined" id="exmore">
+    expand_more
+    </span>
+    <span class="material-symbols-outlined" id="exless">
+        expand_less
+        </span>
+                    </div>
+
+
+                    <p class="PPcom">You can cancel your order from the Order Details screen before it is out for delivery. Simply click on the Account icon at the bottom of the App Homepage > select ‘Orders’ > Select the order which you want to cancel > tap “Cancel”. You can also refuse it at the time of delivery and a refund will be processed to the payment source, if the order amount was paid online.</p>
+                </div>
+            </div>
+            <div id="P_adv">
+                <div>
+                    <img src="P_icons/achiv.svg"/>
+                    <h4>1 Lakh+ Products</h4>
+                    <p>We maintain strict quality controls on all our partner retailers, so that you always get standard quality products.</p>
+                </div>
+                <div>
+                    <img src="P_icons/proLock.svg"/>
+                    <h4>Secure Payment</h4>
+                    <p>100% secure and trusted payment protection</p>
+                </div>
+                <div>
+                    <img src="P_icons/callender.svg"/>
+                    <h4>Easy Return</h4>
+                    <p>We have a new and dynamic return window policy for medicines and healthcare items. Refer FAQs section for more details.</p>
+                </div>
+            </div>
+            <div id="P_pic"></div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="/path/to/flickity.pkgd.min.js"></script>
+<script>
+
+</script>
