@@ -116,11 +116,16 @@
     display: none;
     position: fixed;
     top: 0;
-    right: 0;
     height: 100vh;
     border: 1px solid #f1f1f1;
     z-index: 1;
 }
+
+/* #myForm {
+    position: fixed;
+    right: -500px;
+    transition: right 2s;
+} */
 
 
 .login-form {

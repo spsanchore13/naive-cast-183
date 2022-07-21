@@ -10,7 +10,9 @@ document.querySelector(".close-btn-signup").addEventListener("click", closeFormS
 
 //Login Form Function
 function openForm() {
+    // document.getElementById("myForm").style.right = "0px"
     document.getElementById("myForm").style.display = "block";
+
 }
 
 function closeForm() {
