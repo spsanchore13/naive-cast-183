@@ -14,8 +14,8 @@
 
 .profile .left{
     /* border: 1px solid gray; */
-    width: 30%;
-    height: 100vh;
+    width: 25%;
+    height: 900px;
     display: flex;
     flex-direction: column;
     row-gap: 20px;
@@ -29,6 +29,8 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 20px 30px;
     height: 350px;
+    border-radius: 10px;
+    margin-top:110px;
 }
 
 .profile .right sup{
@@ -75,12 +77,13 @@
 
 .profile .left > :nth-child(2){
     /* border: 1px solid red; */
-    height: 20%;
+    height: 13%;
     /* background-color:#8573e1; */
     background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(142,0,237,1) 48%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(142,0,237,1) 48%, rgba(0,212,255,1) 100%);
     position: relative;
     color: #fff;
+    border-radius: 10px;
 }
 
 .profile .left > :nth-child(2) img{
@@ -106,6 +109,27 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(142,0,237,1) 48%, rgb
 }
 
 .profile .left > :nth-child(3){
-    border: 1px solid red;
-    height: 60%;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    height: 66%;
+    position: relative;
+    padding: 35px 30px;
+    border-radius: 10px;
 }
+
+
+.container-1{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.container-1 + div{
+    padding-left: 45px;
+    margin: 5px 0 15px 0;
+}
+ul{
+    list-style: none;
+    line-height: 1.5em;
+}
+
