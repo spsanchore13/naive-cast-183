@@ -1,0 +1,278 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#navbar{
+    position: sticky;
+    background: #fff;
+    top: 0;
+    height: 110px;
+    width: 100%;
+    padding: 10px 30px;
+    border-bottom: 1px solid gray;
+    font-family: sans-serif;
+    background-color:#10847e;
+   
+}
+
+#container{
+    position: relative;
+    width: 60%;
+    display:flex;
+    flex-direction: column;
+}
+
+#searchBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid gray;
+    height: 38px;
+    border-radius: 10px;
+    padding: 0 10px;
+    background-color: #fff;
+}
+.search-icon {
+    color: gray;
+    height:20px;
+    width: 20px;
+}
+
+ #navbar #search{
+    height:100%; 
+    width: 40%;
+    border:none;
+    background: transparent;
+} 
+#navbar #search:focus{
+    outline: none;
+}
+
+#navbar #topbar{
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    align-items: center;
+    color: #fff;
+}
+
+#topbar img{
+    width: 15%;
+}
+
+#navbar #bottombar{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 30px;
+    color: #fff;
+    width:80%;
+    margin:10px 20%;
+}
+
+#navbar #bottombar a,p{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 100;
+}
+
+#bottombar > div:first-child{
+    display: flex;
+    gap: 20px;
+}
+#bottombar > div:last-child{
+    display: flex;
+    gap: 20px;
+}
+
+.open-btn {
+    cursor: pointer; 
+}
+
+.open-btn-signup {
+    cursor: pointer; 
+}
+
+.form-top {
+    background-color: #10847e;
+    padding: 20px 0;
+    margin-bottom: 50px;
+}
+
+.form-top img {
+    width: 40%;
+    margin-left: 30px;
+}
+
+
+
+/* The popup form - hidden by default */
+.form-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    border: 1px solid #f1f1f1;
+    z-index: 1;
+}
+
+/* #myForm {
+    position: fixed;
+    right: -500px;
+    transition: right 2s;
+} */
+
+
+.login-form {
+    max-width: 400px;
+    background-color: white;
+}
+
+.login-form>div+div {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.login-form h1 {
+
+    text-align: center;
+    color: #50595f;
+    margin-bottom: 20px;
+}
+
+
+.login-form input{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.close {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: white;
+}
+
+
+.login-form .btn {
+    background-color: #10847e;
+    font-size: 16px;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    border-radius: 10px;
+}
+
+.login-form .btn:hover{
+    opacity: 1;
+}
+
+.form-popup-signup {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    border: 1px solid #f1f1f1;
+    z-index: 1;
+}
+
+
+.signup-form {
+    max-width: 400px;
+    background-color: white;
+}
+
+.signup-form>div+div {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.signup-form h1 {
+    margin-top: 10px;
+    text-align: center;
+    color: #50595f;
+    margin-bottom: 20px;
+}
+
+
+.signup-form input{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: none;
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.signup-form input,
+.login-form input{
+    outline: none;
+}
+
+.close-btn-signup {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: white;
+}
+
+
+.signup-form .btn-signup {
+    background-color: #10847e;
+    font-size: 16px;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    border-radius: 10px;
+}
+.signup-form .btn-signup:hover {
+    opacity: 1;
+}
+
+.signup-form-top {
+    background-color: #10847e;
+    padding: 20px 0;
+}
+
+.signup-form-top img {
+    width: 40%;
+    margin-left: 30px;
+}
+
+/* #suggestion{
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    height: 100px;
+    background-color:#fff;
+    display:flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    border-top: none;
+} */
+
+/* #suggestion p{
+    color: black;
+} */
