@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.profile{
+    display: flex;
+    justify-content:center;
+    margin-top: 10px;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.profile .left{
+    /* border: 1px solid gray; */
+    width: 30%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.profile .right{
+    position: relative;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px 30px;
+    height: 350px;
+}
+
+.profile .right sup{
+    color: red;
+}
+
+.profile .right input{
+    padding: 10px;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+.profile .right input:focus{
+    outline-color: #10847e;
+    
+}
+
+.profile button{
+    margin-top:20px;
+    margin-left: 80%;
+    width: 20%;
+    padding:8px;
+    text-transform: uppercase;
+    background-color: #e0e0e0;
+    border:none;
+    color:#bdb3b1;
+    cursor: not-allowed;
+}
+
+.profile #mobile{
+    cursor: context-menu;
+}
+
+.profile .left > :nth-child(1){
+    display: flex;
+    gap: 20px;
+    align-items:center;
+    height: 10%;
+}
+
+.profile .left > :nth-child(1) img{
+    width: 40px;
+}
+
+.profile .left > :nth-child(2){
+    /* border: 1px solid red; */
+    height: 20%;
+    /* background-color:#8573e1; */
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(142,0,237,1) 48%, rgba(0,212,255,1) 100%);
+    position: relative;
+    color: #fff;
+}
+
+.profile .left > :nth-child(2) img{
+    position: absolute;
+    top: 20px;
+    left: 20px
+}
+
+.profile .left > :nth-child(2) p{
+    width: 40%;
+    position: absolute;
+    left: 30%;
+    top: 15px;
+    font-weight: 100;
+    font-size: 17px;
+}
+
+.profile .left > :nth-child(2) p+img{
+    position: relative;
+    top: 40%;
+    left: 90%;
+
+}
+
+.profile .left > :nth-child(3){
+    border: 1px solid red;
+    height: 60%;
+}
