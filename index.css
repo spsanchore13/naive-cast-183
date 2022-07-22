@@ -398,9 +398,71 @@
 #bloghere{
     height: 360px;
     width: 1336px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: auto;
     overflow: hidden;
+    position: sticky;
+}
+
+/* 
+uyguyguyguyh */
+
+#blogsimg{
+    height: 332px;
+    /* border: 1px solid black; */
+    margin-right: 20px;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    transition: all ease 0.5s;
+    left:0px;
+}
+.blogpic{
+    margin-right: 57px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+
+
+#hdfc{
+    width: 1336px;
+    margin-left: 100px;
+    cursor: pointer;
+}
+
+
+
+#feedimg{
+    /* border: 1px solid black; */
+    width: auto;
+    display: flex;
+    /* height: ; */
+    transition: all ease 0.5s;
+    position: absolute;
+    left:-2010px;
+}
+#feedimg img{
+    height: 275px;
+}
+
+#feedbackpoint{
+    width: 1336px;
+    height: 300px;
+    margin: auto;
+    /* border: 1px solid black; */
+    position: sticky;
+    overflow: hidden;
+}
+#lastbanner{
+    width: 100%;
+}
+
+#left_btn:hover,#right_btn:hover,#off1:hover,#off2:hover,#labtest1:hover,#labtest2:hover,#prod1:hover,#prod2:hover,#dls1:hover,#dls2:hover,#negetive:hover,#positive:hover,#sis:hover,#bro:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
 }
 
 

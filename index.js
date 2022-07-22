@@ -730,14 +730,106 @@ let m=1;
 
  }
 
+let bloooog=document.querySelector("#blogsimg");
+ let g=1;
+ document.querySelector("#negetive").addEventListener("click",function(){
+  if(g===1){
+    g=1;
+  }else{
+    g--;
+  }
+  london(g)
+  
+ })
+ document.querySelector("#positive").addEventListener("click",function(){
+  if(g===6){
+    g=6;
+  }else{
+    g++;
+  }
+  london(g)
+ })
+
+ function london(g){
+  if(g===1){
+    bloooog.style.left="0px";
+  }else if(g===2){
+    bloooog.style.left="-460px";
+  }else if(g===3){
+    bloooog.style.left="-920px";
+  }else if(g===4){
+    bloooog.style.left="-1380px";
+  }else if(g===5){
+    bloooog.style.left="-1840px";
+  }else if(g===6){
+    bloooog.style.left="-2300px";
+  }
+ }
+
+
+
+
+
+let feed=document.querySelector("#feedimg");
+ let h=1;
+ document.querySelector("#sis").addEventListener("click",function(){
+  if(h===1){
+    h=1;
+  }else{
+    h--;
+  }
+  tokio(h)
+ })
+ document.querySelector("#bro").addEventListener("click",function(){
+  if(h===7){
+    h=1;
+  }else{
+    h++;
+  }
+  tokio(h)
+ })
+
+ function  tokio(h){
+  if(h===1){
+    feed.style.left="0px";
+  }else if(h===2){
+    feed.style.left="-340px";
+  }else if(h===3){
+    feed.style.left="-680px";
+  }else if(h===4){
+    feed.style.left="-1010px";
+  }else if(h===5){
+    feed.style.left="-1340px";
+  }else if(h===6){
+    feed.style.left="-1680px";
+  }else if(h===7){
+    feed.style.left="-2010px";
+  }
+}
+
+  setInterval(function(){
+    if(h===7){
+      h=1;
+    }else{
+      h++;
+    }
+    tokio(h)
+   },3000)
+ 
 
 
 
 
 
 
- (function(d, s, id) { var js, pjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//www.tickcounter.com/static/js/loader.js"; pjs.parentNode.insertBefore(js, pjs); }(document, "script", "tickcounter-sdk"));
 
+
+
+
+
+
+
+ 
 
 
   
