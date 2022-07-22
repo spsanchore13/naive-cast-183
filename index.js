@@ -524,6 +524,225 @@ let m=1;
     }
  }
 
+ let homeprod=[
+    {
+      titel:"Sirona Feminine Cramp Relief Patch Packet Of 5 'S",
+  sprice:"₹224",
+  mrp:"₹249",
+  imgurl:"https://cdn01.pharmeasy.in/dam/products_otc/164721/sugar-free-gold-sweetener-tablets-strip-of-500-2-1654078766.jpg?dim=224x0&dpr=1.25&q=100"
+  },
+      {
+        titel:"Liveasy Wellness Apple Cider Vinegar With Mother -Improves Metabolism- 500ml Bottle",
+  sprice:"₹226",
+  mrp:"₹649",
+  imgurl:"https://cdn01.pharmeasy.in/dam/products_otc/J51815/liveasy-wellness-apple-cider-vinegar-with-mother-improves-metabolism-500ml-bottle-2-1654165611.jpg?dim=320x320&dpr=1&q=100"
+   },
+   {
+    titel:"Revital H Women Multivitamin With Calcium, Zinc, Ginseng For Immunity, Strong Bones & Energy 30 Tablets",
+  sprice:"₹345",
+  mrp:"₹239",
+  imgurl:"https://cdn01.pharmeasy.in/dam/products_otc/I00596/revital-h-women-multivitamin-with-calcium-zinc-ginseng-for-immunity-strong-bones-energy-30-tablets-1-1654168794.jpg?dim=320x320&dpr=1&q=100"
+  },
+  {
+    titel:"Volini Pain Relief Gel Tube Of 75 G",
+  sprice:"₹245",
+  mrp:"₹208",
+  imgurl:"https://cdn01.pharmeasy.in/dam/products_otc/183157/volini-pain-relief-gel-tube-of-75-g-1-1654078754.jpg?dim=320x320&dpr=1&q=100"
+  },
+  {
+    titel:"Evion 400mg Strip Of 10 Capsules",
+  sprice:"₹32",
+  mrp:"₹35",
+  imgurl:"https://cdn01.pharmeasy.in/dam/products_otc/071710/evion-400mg-strip-of-10-capsules-2-1656662057.jpg?dim=320x320&dpr=1&q=100"
+  },
+  {
+    titel:"Livogen Z Captab 15'S",
+  sprice:"₹71",
+  mrp:"₹79",
+  imgurl:"https://cdn01.pharmeasy.in/dam/products_otc/I32380/livogen-z-captab-15s-2-1656662098.jpg?dim=320x320&dpr=1&q=100"
+  },
+  {
+    titel:"Pharmeasy Diabetic & Orthopedic Men Sandals (Fahion Range-3) Brown Color, Size 10",
+  sprice:"₹1049",
+  mrp:"1399",
+  imgurl:"https://cdn01.pharmeasy.in/dam/products_otc/N15573/pharmeasy-diabetic-orthopedic-men-sandals-fahion-range-3-brown-color-size-10-1-1647418991.jpg?dim=320x320&dpr=1&q=100"
+  },
+  {
+    titel:"Everyuth Naturals Anti Acne Anti Marks Tulsi Turmeric Face Wash 150 Gm",
+  sprice:"₹97",
+  mrp:"₹150",
+  imgurl:"https://cdn01.pharmeasy.in/dam/products_otc/I10543/everyuth-naturals-anti-acne-anti-marks-tulsi-turmeric-face-wash-150-gm-2-1641787744.jpg?dim=320x320&dpr=1&q=100"
+  },
+  {
+    titel:"Saffola Fittify Original Peanut Butter With Omega-3 Super Creamy 340g Jar",
+  sprice:"₹138",
+  mrp:"₹220",
+  imgurl:"https://cdn01.pharmeasy.in/dam/products_otc/O01875/saffola-fittify-original-peanut-butter-with-omega-3-super-creamy-340g-jar-2-1647515308.jpg?dim=320x320&dpr=1&q=100"
+  },
+  {
+    titel:"Polybion Czs Tablet 15'S",
+  sprice:"₹82",
+  mrp:"₹92",
+  imgurl:"https://cdn01.pharmeasy.in/dam/products/196208/polybion-czs-tablet-15s-1-1641532585.jpg?dim=320x320&dpr=1&q=100"
+  },
+  {
+    titel:"Sevenseas Original Capsule 100`S",
+  sprice:"₹319",
+  mrp:"₹287",
+  imgurl:"https://cdn01.pharmeasy.in/dam/products_otc/227623/sevenseas-original-capsule-100s-2-1656662108.jpg?dim=320x320&dpr=1&q=100"
+  },
+  {
+    titel:"Neurobion Forte Tablet 30'S",
+  sprice:"₹31",
+  mrp:"₹34",
+  imgurl:"https://cdn01.pharmeasy.in/dam/products_otc/I09432/neurobion-forte-tablet-30s-2-1656661904.jpg?dim=320x320&dpr=1&q=100"
+  },
+  {
+    titel:"Sugar Free Gold Sweetener Tablets Strip Of 500",
+  sprice:"₹256",
+  mrp:"₹285",
+  imgurl:"https://cdn01.pharmeasy.in/dam/products_otc/164721/sugar-free-gold-sweetener-tablets-strip-of-500-2-1654078766.jpg?dim=320x320&dpr=1&q=100"
+  },
+  {
+    titel:"Saffola Fittify Whey Protein Peanut Butter Dark Chocolaty Super Creamy 200g Jar",
+  sprice:"₹125",
+  mrp:"₹199",
+  imgurl:"https://cdn01.pharmeasy.in/dam/products_otc/S50183/saffola-fittify-whey-protein-peanut-butter-dark-chocolaty-super-creamy-200g-jar-2-1647515150.jpg?dim=320x320&dpr=1&q=100"
+  },
+  {
+    titel:"Abzorb Antifungal Dusting Powder 100gm",
+  sprice:"₹120",
+  mrp:"₹142",
+  imgurl:"https://cdn01.pharmeasy.in/dam/products_otc/S50183/saffola-fittify-whey-protein-peanut-butter-dark-chocolaty-super-creamy-200g-jar-2-1647515150.jpg?dim=320x320&dpr=1&q=100"
+  },
+  {
+    titel:"Baidyanath Chyawanprash Special - Immunity & Omniprotection | 52 Ayurvedic Ingredients - 950g  ",
+  sprice:"₹261",
+  mrp:"₹349",
+  imgurl:"https://cdn01.pharmeasy.in/dam/products_otc/I41645/baidyanath-chyawanprash-special-immunity-omniprotection-52-ayurvedic-ingredients-950g-2-1654165857.jpg?dim=320x320&dpr=1&q=100"
+  },
+  {
+    titel:"Everherb (By Pharmeasy) Amla Juice-Rich In Vitamin C-Natural Immunity Booster - 1 Litre Bottle  ",
+  sprice:"₹299",
+  mrp:"₹399",
+  imgurl:"https://cdn01.pharmeasy.in/dam/products_otc/D92359/everherb-by-pharmeasy-amla-juice-rich-in-vitamin-c-natural-immunity-booster-1-litre-bottle-2-1654169607.jpg?dim=320x320&dpr=1&q=100"
+  },
+  {
+    titel:"Crocin 650mg Advance Tablets 15'S  ",
+  sprice:"₹26",
+  mrp:"₹30",
+  imgurl:"https://cdn01.pharmeasy.in/dam/products/I43006/crocin-650mg-advance-tab-15s-2-1641538269.jpg?dim=320x320&dpr=1&q=100"
+  }
+  ]
+  
+  let xxx=document.querySelector("#prodxx");
+  
+  
+  homeprod.forEach(function(ele,ind){
+  
+    let div=document.createElement("div");
+    div.setAttribute("class","arya_data")
+    
+  
+    let img=document.createElement("img");
+    img.setAttribute("class","arya_pic")
+    img.src=ele.imgurl;
+  
+    let h4=document.createElement("h4");
+    h4.innerText=ele.titel;
+    h4.style.color="#596267"
+  
+    // let div2=document.createElement("div");
+    // div2.setAttribute("class","arya_data2")
+    
+  
+  
+    let p=document.createElement("p");
+    p.innerHTML=`MRP :<s>${ele.mrp}</s>`
+    p.style.color="#b8c1c8"
+    p.style.marginTop="0px"
+  
+    let b=document.createElement("b");
+    b.innerText=ele.sprice;
+    b.style.marginTop="20px"
+    // div2.append(p,b)
+    div.append(img,h4,p,b);
+    xxx.append(div)
+  })
+  let proo=document.querySelector("#prodxx");
+  let s=1;
+  document.querySelector("#dls1").addEventListener("click",function (){
+       if(s===1){
+        s=1;
+       }else{
+        s--;
+       }
+       console.log(s)
+      ddddl(s)
+ })
+ document.querySelector("#dls2").addEventListener("click",function (){
+    if(s===13){
+        s=13;
+       }else{
+        s++;
+       }
+      ddddl(s)
+ })
+ function ddddl(s){
+      if(s===1){
+       proo.style.left="0px";
+      }else if(s===2){
+        proo.style.left="-224px";
+      }
+      else if(s===3){
+        proo.style.left="-448px";
+      }
+      else if(s===4){
+        proo.style.left="-672px";
+      }
+      else if(s===5){
+        proo.style.left="-896px";
+      }
+      else if(s===6){
+        proo.style.left="-1120px";
+      }
+      else if(s===7){
+        proo.style.left="-1344px";
+      }
+      else if(s===8){
+        proo.style.left="-1568px";
+      }
+      else if(s===9){
+        proo.style.left="-1792px";
+      }
+      else if(s===10){
+        proo.style.left="-2016px";
+      }
+      else if(s===11){
+        proo.style.left="-2240px";
+      }
+      else if(s===12){
+        proo.style.left="-2464px";
+      }
+      else if(s===13){
+        proo.style.left="-3000px";
+      }
+
+ }
+
+
+
+
+
+
+
+ (function(d, s, id) { var js, pjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//www.tickcounter.com/static/js/loader.js"; pjs.parentNode.insertBefore(js, pjs); }(document, "script", "tickcounter-sdk"));
+
+
+
+  
+  
+
 
 
 

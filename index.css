@@ -363,6 +363,48 @@
     border: 5px solid transparent;
    }
 
+   #prodxx{
+    /* border: 1px solid black; */
+    height: 335px;
+    width: auto;
+    display: flex;
+    width: 10000px;
+    position: absolute;
+    transition: all ease 0.5s;
+    left: -224px;
+}
+.arya_data{
+    width:224px;
+    height: 332px;
+    margin-right: 10px;
+    /* border: 1px solid black; */
+    cursor: pointer;
+}
+.arya_pic{
+    width: 200px;
+    height: 200px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: 10px;
+}
+#dealls{
+    width: 1336px;
+    height: 350px;
+    margin: auto;
+    /* border: 1px solid black; */
+    overflow: hidden;
+    position: sticky;
+}
+
+#bloghere{
+    height: 360px;
+    width: 1336px;
+    border: 1px solid black;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+
 
 
 
