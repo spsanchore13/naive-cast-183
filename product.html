@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/product.css">
+</head>
+
+<body>
+    <div id="top-below-nav">
+        <p><a href="">Medicine</a></p>
+        <p><a href="">Healthcare</a></p>
+        <p><a href="">Lab Tests</a></p>
+        <p><a href="">Offers</a></p>
+        <p><a href="">PLUS</a></p>
+        <p><a href="">Health Blog</a></p>
+    </div>
+    <div id="product-top-bar">
+        <h2>Filter</h2>
+        <h2>Beauty</h2>
+        <select id="sorting">
+            <option value="sort">Sort Product</option>
+            <option value="l-to-h">Price Low To High</option>
+            <option value="h-to-l">Price High To Low</option>
+        </select>
+    </div>
+
+    <div id="products">
+        <div id="cat-type">
+            <h3>Category</h3>
+            <div>
+                <label>Skin Care</label>
+                <input type="checkbox" id="skin" onclick="Skin_Care()">
+            </div>
+            <div>
+                <label>Personal Care</label>
+                <input type="checkbox" id="personal" onclick="Personal()">
+            </div>
+            <div>
+                <label>Home Care</label>
+                <input type="checkbox" id="home" onclick="Home()">
+            </div>
+            <div>
+                <label>Ayurvedic Care</label>
+                <input type="checkbox" id="ayurvedic" onclick="Ayurvedic()">
+            </div>
+            <div>
+                <label>Sexual Wellness</label>
+                <input type="checkbox" id="sexual" onclick="Sexual()">
+            </div>
+            <div>
+                <label>Covid Care</label>
+                <input type="checkbox" id="covid" onclick="Covid()">
+            </div>
+            <div>
+                <label>Beauty</label>
+                <input type="checkbox" id="beauty" onclick="Beauty()">
+            </div>
+            <div>
+                <label>Accessories</label>
+                <input type="checkbox" id="accessories" onclick="Accessories()">
+            </div>
+            <div>
+                <label>Food And Drinks</label>
+                <input type="checkbox" id="food-drinks" onclick="FoodDrinks()">
+            </div>
+            <div>
+                <label>Value Store</label>
+                <input type="checkbox" id="value-store" onclick="Value_Store()">
+            </div>
+            <div>
+                <label>Devices</label>
+                <input type="checkbox" id="device" onclick="Devices()">
+            </div>
+
+        </div>
+        <div id="product"></div>
+    </div>
+</body>
+
+</html>
+<script>
+    let data = [
+        {
+            "price": 495,
+            "productName": "Plix Vitamin E 30 Capsules For Youthful And Glowing Skin, Pack Of 1",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/Q28277/plix-vitamin-e-30-capsules-for-youthful-and-glowing-skin-pack-of-1-2-1649837080.jpg",
+            "category": "Personal Care",
+            "id": 1
+        },
+        {
+            "price": 53,
+            "productName": "Supradyn Daily Multivitamin Tablets 15s",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/T70695/supradyn-daily-multivitamin-tablets-15s-1-1641793954.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Personal care",
+            "id": 2
+        },
+        {
+            "price": 209,
+            "productName": "Calcimax Forte Plus Strip Of 30 Tablets",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/207833/calcimax-forte-plus-strip-of-30-tablets-2-1654078168.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Personal Care",
+            "id": 3
+        },
+        {
+            "price": 304,
+            "productName": "Calcimax 500 Health Supplement Tablets (500 Mg Of Calcium) Box Of 30",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/031531/calcimax-500-health-supplement-tablets-500-mg-of-calcium-box-of-30-2-1654077366.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Personal Care",
+            "id": 4
+        },
+        {
+            "price": 479.36,
+            "productName": "Batiste Instant Hair Refresh Dry Shampoo Plus Show - Stopping Heavenly Volume - 200ml",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/A23405/batiste-instant-hair-refresh-dry-shampoo-plus-show-stopping-heavenly-volume-200ml-6.1-1641791526.jpg",
+            "category": "Personal Care",
+            "id": 5
+        },
+        {
+            "price": 505.26,
+            "productName": "Venusia Max Intensive Moisturizing Lotion, Repairs Dry Skin, Provides Soft & Smooth Skin, 300gm",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/263100/venusia-max-intensive-moisturizing-lotion-repairs-dry-skin-provides-soft-smooth-skin-300gm-2-1645786251.jpg",
+            "category": "Personal Care",
+            "id": 6
+        },
+        {
+            "price": 293.25,
+            "productName": "Revital H Women Multivitamin With Calcium, Zinc, Ginseng For Immunity, Strong Bones & Energy 30 Tablets",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/I00596/revital-h-women-multivitamin-with-calcium-zinc-ginseng-for-immunity-strong-bones-energy-30-tablets-1-1654168794.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Personal Care",
+            "id": 7
+        },
+        {
+            "price": 223,
+            "productName": "Moisturex Cream 100gm",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/116001/moisturex-cream-100gm-2-1641398801.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Personal Care",
+            "id": 8
+        },
+        {
+            "price": 799,
+            "productName": "La French Victory, Eau De Perfume For Men, 100ml",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/L64620/la-french-victory-eau-de-perfume-for-men-100ml-2-1655560499.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Personal Care",
+            "id": 9
+        },
+        {
+            "price": 182,
+            "productName": "Dettol Antiseptic Liquid Bottle Of 550 Ml",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/I40695/dettol-antiseptic-liquid-bottle-of-550-ml-2-1656923531.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Covid Care",
+            "id": 10
+        },
+        {
+            "price": 25,
+            "productName": "Cofsils Orange Lozenges Strip Of 10",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/I04110/cofsils-orange-lozenges-strip-of-10-2-1654251540.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Covid Care",
+            "id": 11
+        },
+        {
+            "price": 385,
+            "productName": "Pharmeasy Multivitamin Multimineral - Immunity Booster - Complete Nutrition - Bottle Of 60",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/T60720/pharmeasy-multivitamin-multimineral-immunity-booster-complete-nutrition-bottle-of-60-2-1658316798.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Covid Care",
+            "id": 12
+        },
+        {
+            "price": 57,
+            "productName": "Vicks Inhaler Keychain Pack Of 1",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/I40046/vicks-inhaler-keychain-pack-of-1-2-1654166287.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Covid Care",
+            "id": 13
+        },
+        {
+            "price": 55,
+            "productName": "Maxirich Multivitamin & Minerals Sofgels Strip Of 10",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/205923/maxirich-multivitamin-minerals-sofgels-strip-of-10-2-1641398591.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Covid Care",
+            "id": 14
+        },
+        {
+            "price": 260,
+            "productName": "Coviself Covid Self Test Kit",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/O70942/coviself-covid-self-test-kit-2-1644415093.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Covid Care",
+            "id": 15
+        },
+        {
+            "price": 94,
+            "productName": "Revital H Men Multivitamin With Zinc & Ginseng For Immunity, Strong Bones & Energy (10 Capsules)",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/270551/revital-h-men-multivitamin-with-zinc-ginseng-for-immunity-strong-bones-energy-10-capsules-1-1654078581.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Covid Care",
+            "id": 16
+        },
+        {
+            "price": 100,
+            "productName": "Bisleri By The Bay Hand Sanitizer Gel - 200 Ml",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/F20003/bisleri-by-the-bay-hand-sanitizer-gel-200-ml-2-1641795488.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Covid Care",
+            "id": 17
+        },
+        {
+            "price": 42,
+            "productName": "Otrivin Paediatric 0.05 % Nasal Drops 10 Ml",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/I28135/otrivin-paediatric-005-nasal-drops-10-ml-3-1641788151.jpg",
+            "category": "Covid Care",
+            "id": 18
+        },
+        {
+            "price": 117,
+            "productName": "Khadi Essentials Basics Pure & Safe Hand Sanitizer Bottle Of 330 Ml",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/P95184/khadi-essentials-basics-pure-safe-hand-sanitizer-bottle-of-330-ml-6.1-1641788999.jpg",
+            "category": "Covid Care",
+            "id": 19
+        },
+        {
+            "price": 175,
+            "productName": "Baidyanath Aloe Vera Juice - Improves Skin And Hair Health|No Preservatives Or Added Sugar - 1l",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/276013/baidyanath-aloe-vera-juice-improves-skin-and-hair-healthno-preservatives-or-added-sugar-1l-6.1-1647092153.jpg",
+            "category": "Health Food And Drinks",
+            "id": 20
+        },
+        {
+            "price": 207,
+            "productName": "Everherb Karela Jamun Juice - Helps Maintains Healthy Sugar Levels -Helps In Weight Management - 1l",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/L79986/everherb-karela-jamun-juice-helps-maintains-healthy-sugar-levels-helps-in-weight-management-1l-3-1654234652.jpg",
+            "category": "Health Food And Drinks",
+            "id": 21
+        },
+        {
+            "price": 522,
+            "productName": "Protinex Tasty Chocolate Nutrition Drink Tin Of 400 G",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/373983/protinex-tasty-chocolate-nutrition-drink-tin-of-400-g-3-1654077568.jpg",
+            "category": "Health Food And Drinks",
+            "id": 22
+        },
+        {
+            "price": 310,
+            "productName": "Horlicks Women'S Plus Caramel Jar, 400 G",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/F52227/horlicks-womens-plus-caramel-jar-400-g-3-1654169291.jpg",
+            "category": "Health Food And Drinks",
+            "id": 23
+        },
+        {
+            "price": 243,
+            "productName": "Sugar Free Gold Sweetener Tablets Strip Of 500",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/164721/sugar-free-gold-sweetener-tablets-strip-of-500-3-1654078386.jpg",
+            "category": "Health Food And Drinks",
+            "id": 24
+        },
+        {
+            "price": 386,
+            "productName": "Threptin Vanilla Butterscotch Nutrition Diskettes Tin Of 275 G",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/368810/threptin-vanilla-butterscotch-nutrition-diskettes-tin-of-275-g-2-1654077634.jpg",
+            "category": "Health Food And Drinks",
+            "id": 25
+        },
+        {
+            "price": 175,
+            "productName": "Liveasy Foods Healthy Seed Mix - Blend Of 6 Fibre Rich Healthy Seeds - 200 Gms",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/E34104/liveasy-foods-healthy-seed-mix-blend-of-6-fibre-rich-healthy-seeds-3-1656420887.jpg",
+            "category": "Health Food And Drinks",
+            "id": 26
+        },
+        {
+            "price": 342,
+            "productName": "Kapiva Karela Jamun Juice 1l| Natural Juice Made From Fresh Karela And Jamun Seeds",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/I10590/kapiva-karela-jamun-juice-1l-natural-juice-made-from-fresh-karela-and-jamun-seeds-3-1654167557.jpg",
+            "category": "Health Food And Drinks",
+            "id": 27
+        },
+        {
+            "price": 240,
+            "productName": "Horlicks Health & Nutrition Drink Refill, 500 G",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/I04912/horlicks-health-nutrition-drink-refill-500-g-3-1654168710.jpg",
+            "category": "Health Food And Drinks",
+            "id": 28
+        },
+        {
+            "price": 395,
+            "productName": "Nestle Lactogen 1 Infant Formula Powder - Upto 6 Months, Stage 1, 400g Bag-In-Box Pack",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/329300/nestle-lactogen-1-infant-formula-powder-upto-6-months-stage-1-400g-bag-in-box-pack-2-1657181902.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Health Food And Drinks",
+            "id": 29
+        },
+        {
+            "price": 349,
+            "productName": "Colorbar Velvet Matte Lipstick- Wanna Be",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/C48021/colorbar-velvet-matte-lipstick-wanna-be-6.5-1649857387.jpg",
+            "category": "Beauty",
+            "id": 30
+        },
+        {
+            "price": 450,
+            "productName": "Plum Eye- Swear- By Brow Definer - Ash Black - 0.3gm",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/L83723/plum-eye-swear-by-brow-definer-ash-black-03gm-2-1653471045.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Beauty",
+            "id": 31
+        },
+        {
+            "price": 599,
+            "productName": "Colorbar Matte Touch Lipstick- Pink Chiffon",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/V12403/colorbar-matte-touch-lipstick-pink-chiffon-2-1649856453.jpg",
+            "category": "Beauty",
+            "id": 32
+        },
+        {
+            "price": 191,
+            "productName": "Nivea Men Deo Fresh Active - 150ml",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/D21553/nivea-men-deo-fresh-active-150ml-2-1654258115.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Beauty",
+            "id": 33
+        },
+        {
+            "price": 191,
+            "productName": "Nivea Deo Pearl & Beauty Women - 150ml",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/P41431/nivea-deo-pearl-beauty-women-150ml-2-1654250185.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Beauty",
+            "id": 34
+        },
+        {
+            "price": 465,
+            "productName": "Wild Stone Code Titanium Body Perfume For Men - 120ml (Pack Of 2)",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/T87736/wild-stone-code-titanium-body-perfume-for-men-120ml-pack-of-2-2-1641795780.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Beauty",
+            "id": 35
+        },
+        {
+            "price": 232,
+            "productName": "Wild Stone Code Copper Perfume Body Spray - 120ml",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/K46687/wild-stone-code-copper-perfume-body-spray-120ml-2-1641795421.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Beauty",
+            "id": 36
+        },
+        {
+            "price": 212,
+            "productName": "Nivea 42k Deodorant For Runners - 150 Ml",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/C06433/nivea-42k-deodorant-for-runners-150-ml-2-1641791879.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Beauty",
+            "id": 37
+        },
+        {
+            "price": 201,
+            "productName": "Engage W1 Perfume Spray For Women - 120ml",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/Q41004/engage-w1-perfume-spray-for-women-120ml-2-1641790074.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Beauty",
+            "id": 38
+        },
+        {
+            "price": 453,
+            "productName": "Venusia Max Intensive Moisturizing Cream, For Dry To Very Dry Skin, Repairs & Smoothens Skin, 150g",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/180461/venusia-max-intensive-moisturizing-cream-for-dry-to-very-dry-skin-repairs-smoothens-skin-150g-2-1654078395.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Skin Care",
+            "id": 39
+        },
+        {
+            "price": 84,
+            "productName": "Tetmosol Medicated Soap For Relief From Skin Infections - Lime Fragrance - 100g",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/265998/tetmosol-medicated-soap-for-relief-from-skin-infections-lime-fragrance-100g-3-1654078621.jpg",
+            "category": "Skin Care",
+            "id": 40
+        },
+        {
+            "price": 249,
+            "productName": "Dettol Intense Cool Bathing Soap Bar With Menthol- Buy 4 Get 1 Free - 125g Each",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/R85254/dettol-intense-cool-bathing-soap-bar-with-menthol-buy-4-get-1-free-125g-each-6.1-1656923359.jpg",
+            "category": "Skin Care",
+            "id": 41
+        },
+        {
+            "price": 220,
+            "productName": "Veet Pure Hair Removal Cream For Women With No Ammonia Smell, Normal Skin - 100g",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/I40171/veet-pure-hair-removal-cream-for-women-with-no-ammonia-smell-normal-skin-100g-2-1656923500.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Skin Care",
+            "id": 42
+        },
+        {
+            "price": 229,
+            "productName": "Nivea Soft Light Moisturizer Of 200 Ml",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/I40923/nivea-soft-light-moisturizer-bottle-of-200-ml-2-1654256666.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Skin Care",
+            "id": 43
+        },
+        {
+            "price": 175,
+            "productName": "Lacto Calamine Daily Sunshield Matte Look Sunscreen Spf 50 Pa +++ - 50g",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/L41969/lacto-calamine-daily-sunshield-matte-look-sunscreen-spf-50-pa-50g-2-1654232852.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Skin Care",
+            "id": 44
+        },
+        {
+            "price": 49,
+            "productName": "Himalaya Neem & Turmeric Soap 125gm",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/I48051/himalaya-neem-turmeric-soap-125gm-2-1654250977.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Skin Care",
+            "id": 45
+        },
+        {
+            "price": 340,
+            "productName": "Nivea Cocoa Nourish Body Lotion Bottle Of 400 Ml",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/I40912/nivea-cocoa-nourish-body-lotion-bottle-of-400-ml-3-1654166006.jpg",
+            "category": "Skin Care",
+            "id": 46
+        },
+        {
+            "price": 364,
+            "productName": "Fash Foam Face Wash Bottle Of 100 Ml",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/226306/fash-foam-face-wash-bottle-of-100-ml-3-1654078450.jpg",
+            "category": "Skin Care",
+            "id": 47
+        },
+        {
+            "price": 711,
+            "productName": "La Shield Spf 40 Sunscreen Gel 50gm",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/239792/la-shield-spf-40-sunscreen-gel-50gm-6.1-1655119017.jpg",
+            "category": "Skin Care",
+            "id": 48
+        },
+        {
+            "price": 166,
+            "productName": "Himalaya Purifying Neem Face Wash 150ml",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/I35289/himalaya-purifying-neem-face-wash-150ml-2-1654166459.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Skin Care",
+            "id": 49
+        },
+        {
+            "price": 240,
+            "productName": "https://cdn01.pharmeasy.in/dam/products_otc/T14857/nutriglow-neem-tulsi-face-wash-for-oily-pimple-prone-skin-gentle-moisturizing65ml-eachpack-5-2-1644501869.jpg?dim=320x320&dpr=1&q=100",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/T14857/nutriglow-neem-tulsi-face-wash-for-oily-pimple-prone-skin-gentle-moisturizing65ml-eachpack-5-2-1644501869.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Skin Care",
+            "id": 50
+        },
+        {
+            "price": 36,
+            "productName": "Scotch-Brite Silver Sparks Scrub Pad- Pack Of 3",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/T28545/scotch-brite-silver-sparks-scrub-pad-pack-of-3-2-1641791101.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Home Care",
+            "id": 51
+        },
+        {
+            "price": 573,
+            "productName": "Pigeon Multifunctional Laundry Detergent, Lemon Grass - 1.2l",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/D99994/pigeon-multifunctional-laundry-detergent-lemon-grass-12l-2-1643956653.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Home Care",
+            "id": 52
+        },
+        {
+            "price": 839,
+            "productName": "Liveasy Essentials Copper Bottle - Ayurvedic Health Benefits - Leak Proof Cap - 950ml",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/W00450/liveasy-essentials-copper-bottle-ayurvedic-health-benefits-leak-proof-cap-950ml-1-1641793079.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Home Care",
+            "id": 53
+        },
+        {
+            "price": 178,
+            "productName": "Lizol Floral Disinfectant Floor Cleaner Bottle Of 975 Ml",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/G32533/lizol-floral-disinfectant-floor-cleaner-bottle-of-975-ml-2-1654251769.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Home Care",
+            "id": 54
+        },
+        {
+            "price": 135,
+            "productName": "Dettol Disinfectant Sanitizer Spray Bottle -Spring Blossom, 225ml)",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/O35200/dettol-disinfectant-sanitizer-spray-bottle-spring-blossom-225ml-2-1654234201.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Home Care",
+            "id": 55
+        },
+        {
+            "price": 93,
+            "productName": "Dettol Liquid Disinfectant For Personal Hygiene (Menthol Cool, 200ml)",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/I40099/dettol-liquid-disinfectant-for-personal-hygiene-menthol-cool-200ml-2-1654251172.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Home Care",
+            "id": 56
+        },
+        {
+            "price": 136,
+            "productName": "Tri-Activ Disinfectant Spray For Multi-Surfaces - 70% Alcohol Based - 230ml",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/M13039/tri-activ-disinfectant-spray-for-multi-surfaces-70-alcohol-based-230ml-2-1654234507.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Home Care",
+            "id": 57
+        },
+        {
+            "price": 136,
+            "productName": "Mortein 2-In-1 All Insect Killer Spray - 400ml",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/G75045/mortein-2-in-1-all-insect-killer-spray-400ml-2-1641793533.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Home Care",
+            "id": 58
+        },
+        {
+            "price": 261,
+            "productName": "Godrej Aer Power Pocket Bathroom Freshner (Assorted - Pack Of 5)",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/K01212/godrej-aer-power-pocket-bathroom-freshner-assorted-pack-of-5-1-1641793708.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Home Care",
+            "id": 59
+        },
+        {
+            "price": 236,
+            "productName": "Mortein Insta5 Mosquito Repellent Combo Pack (Machine + 3 Refills)",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/Q18747/mortein-insta5-mosquito-repellent-combo-pack-machine-3-refills-2-1641792697.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Home Care",
+            "id": 60
+        },
+        {
+            "price": 44,
+            "productName": "Prega News Pregnancy Test Kit",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/226830/prega-news-pregnancy-test-kit-1-1641787797.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Sexual Wellness",
+            "id": 61
+        },
+        {
+            "price": 36,
+            "productName": "I Can Pregnancy Test Kit",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/226634/i-can-pregnancy-test-kit-1-1654078700.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Sexual Wellness",
+            "id": 62
+        },
+        {
+            "price": 1259,
+            "productName": "Everherb (By Pharmeasy) Shilajit 90 Caps",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/C51495/everherb-shilajit-90-caps-2-1641794502.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Sexual Wellness",
+            "id": 63
+        },
+        {
+            "price": 1349,
+            "productName": "Everherb (By Pharmeasy) Shudh Shilajit, 15 G",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/C85844/everherb-shudh-shilajit-15-g-2-1641793276.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Sexual Wellness",
+            "id": 64
+        },
+        {
+            "price": 73,
+            "productName": "Durex Condoms Extra Time- 3 Pieces",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/O89946/durex-condoms-extra-time-3-pieces-2-1641794437.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Sexual Wellness",
+            "id": 65
+        },
+        {
+            "price": 183,
+            "productName": "Climax Spray - For Men - 12 Gm",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/I08024/climax-for-men-bottle-of-12-g-spray-1-1641787589.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Sexual Wellness",
+            "id": 66
+        },
+        {
+            "price": 226,
+            "productName": "Dabur Shilajit Gold Vitality Capsules Strip Of 10",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/051580/dabur-shilajit-gold-vitality-capsules-strip-of-10-1-1654078818.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Sexual Wellness",
+            "id": 67
+        },
+        {
+            "price": 63,
+            "productName": "Durex Air Condoms - 3s",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/Y70996/durex-air-condoms-3s-2-1641793969.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Sexual Wellness",
+            "id": 68
+        },
+        {
+            "price": 701,
+            "productName": "Baidyanath Vita Ex Gold -Ayurvedic Capsules For Vigor | Helps Boost Stamina Naturally - 20 Capsules",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/H05635/baidyanath-vita-ex-gold-ayurvedic-capsules-for-vigor-helps-boost-stamina-naturally-20-capsules-2-1643377515.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Sexual Wellness",
+            "id": 69
+        },
+        {
+            "price": 1094,
+            "productName": "Kapiva Himalayan Shilajit Resin - 20g",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/E96279/kapiva-himalayan-shilajit-resin-20g-2-1657184239.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Sexual Wellness",
+            "id": 70
+        },
+        {
+            "price": 425,
+            "productName": "Jointace C2 Plus Strip Of 10 Tablets",
+            "image": "https://cdn01.pharmeasy.in/dam/products/I01561/jointace-c2-plus-strip-of-10-tablets-2-1641533658.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Ayurvedic Care",
+            "id": 71
+        },
+        {
+            "price": 139,
+            "productName": "Himalaya Liv.52 Ds Tablets - 60'S",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/105900/himalaya-liv52-ds-tablets-60s-2-1654078613.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Ayurvedic Care",
+            "id": 72
+        },
+        {
+            "price": 461,
+            "productName": "Liveasy Wellness Calcium, Magnesium, Vitamin D3 & Zinc - Bones & Dental Health - Bottle 60 Tabs",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/T22634/liveasy-wellness-calcium-magnesium-vitamin-d3-zinc-bones-dental-health-bottle-60-tabs-2-1654233851.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Ayurvedic Care",
+            "id": 73
+        },
+        {
+            "price": 120,
+            "productName": "Vansaar Gut Relief - Sugarfree (From The House Of Baidyanath) - 100g",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/R50714/vansaar-gut-relief-sugarfree-from-the-house-of-baidyanath-100g-2-1641793774.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Ayurvedic Care",
+            "id": 74
+        },
+        {
+            "price": 8.5,
+            "productName": "Gas O Fast Active Jeera Antacid Sachet Of 5 G",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/I34550/gas-o-fast-active-jeera-antacid-sachet-of-5-g-2-1654166983.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Ayurvedic Care",
+            "id": 75
+        },
+        {
+            "price": 259,
+            "productName": "Dr Ortho An Ayurvedic Medicine Oil Bottle Of 120 Ml",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/I06462/dr-ortho-an-ayurvedic-medicine-oil-bottle-of-120-ml-1-1654168125.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Ayurvedic Care",
+            "id": 76
+        },
+        {
+            "price": 162,
+            "productName": "Volini Pain Relief Gel Tube Of 50 G",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/183151/volini-pain-relief-gel-tube-of-50-g-1-1641398799.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Ayurvedic Care",
+            "id": 77
+        },
+        {
+            "price": 118,
+            "productName": "Systaflam Gel 50gm",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/239561/systaflam-gel-50gm-1-1641398814.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Ayurvedic Care",
+            "id": 78
+        },
+        {
+            "price": 175,
+            "productName": "Liveasy Foods Healthy Seed Mix - Blend Of 6 Fibre Rich Healthy Seeds - 200 Gms",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/E34104/liveasy-foods-healthy-seed-mix-blend-of-6-fibre-rich-healthy-seeds-2-1656420891.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Ayurvedic Care",
+            "id": 79
+        },
+        {
+            "price": 130,
+            "productName": "Zandu Pancharishta Digestive Tonic Bottle Of 450 Ml",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/186800/zandu-pancharishta-digestive-tonic-bottle-of-450-ml-2-1654078118.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Ayurvedic Care",
+            "id": 80
+        },
+        {
+            "price": 806,
+            "productName": "Dr Morepen Gluco One Bg 03 Glucometer Test Strips Box Of 50",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/I05582/dr-morepen-gluco-one-bg-03-glucometer-test-strips-box-of-50-1-1654168216.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Health Care Devices",
+            "id": 81
+        },
+        {
+            "price": 250,
+            "productName": "Covifind Covid-19 Rapid Antigen Self Test By Meril - Easy Self Test | Ai-Powered | Result In 15 Min",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/Z70690/covifind-covid-19-rapid-antigen-self-test-by-meril-easy-self-test-ai-powered-result-in-15-min-2-1654249383.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Health Care Devices",
+            "id": 82
+        },
+        {
+            "price": 581,
+            "productName": "Onetouch Select Plus Glucometer Test Strip 25s Pack",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/V46471/onetouch-select-plus-glucometer-test-strip-25s-pack-2-1654233369.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Health Care Devices",
+            "id": 83
+        },
+        {
+            "price": 519.48,
+            "productName": "Liveasy Essentials Diabetic & Orthopedic Slippers - Cream Women - Size Uk-9",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/S28407/liveasy-essentials-diabetic-orthopedic-slippers-cream-women-size-uk-9-2-1648577911.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Value Store",
+            "id": 84
+        },
+        {
+            "price": 207.48,
+            "productName": "Everherb Karela Jamun Juice - Helps Maintains Healthy Sugar Levels -Helps In Weight Management - 1l",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/L79986/everherb-karela-jamun-juice-helps-maintains-healthy-sugar-levels-helps-in-weight-management-1l-2-1654234653.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Value Store",
+            "id": 85
+        },
+        {
+            "price": 461.23,
+            "productName": "Liveasy Wellness Calcium, Magnesium, Vitamin D3 & Zinc - Bones & Dental Health - Bottle 60 Tabs",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/T22634/liveasy-wellness-calcium-magnesium-vitamin-d3-zinc-bones-dental-health-bottle-60-tabs-2-1654233851.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Value Store",
+            "id": 86
+        },
+        {
+            "price": 299.5,
+            "productName": "Pharmeasy All-In -One Vaporizer",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/Q83701/pharmeasy-all-in-one-vaporizer-1-1654233812.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Value Store",
+            "id": 87
+        },
+        {
+            "price": 499.5,
+            "productName": "Everherb (By Pharmeasy) Shilajit 500mg - Natural Vigour Improvement - Strength & Stamina For Men - Bottle Of 60",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/N70299/everherb-by-pharmeasy-shilajit-500mg-natural-vigour-improvement-strength-stamina-for-men-bottle-of-60-2-1654234290.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Value Store",
+            "id": 88
+        },
+        {
+            "price": 419.4,
+            "productName": "Liveasy Wellness Multivitamin Multimineral - Immunity Booster - Complete Nutrition - Bottle Of 60",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/E79162/liveasy-wellness-multivitamin-multimineral-immunity-booster-complete-nutrition-bottle-of-60-2-1654169626.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Value Store",
+            "id": 45
+        },
+        {
+            "price": 244.3,
+            "productName": "Pharmeasy Hot Water Bag - Relieves Pain - Relaxes Sore Muscles - Improves Blood Supply - Blue - 2l",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/B39499/pharmeasy-hot-water-bag-blue-2-1656420198.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Value Store",
+            "id": 89
+        },
+        {
+            "price": 174.5,
+            "productName": "Liveasy Foods Healthy Seed Mix - Blend Of 6 Fibre Rich Healthy Seeds - 200 Gms",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/E34104/liveasy-foods-healthy-seed-mix-blend-of-6-fibre-rich-healthy-seeds-2-1656420891.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Value Store",
+            "id": 90
+        },
+        {
+            "price": 219.45,
+            "productName": "Everherb (By Pharmeasy) Pain Relief Oil - Blend Of 8 Powerful Herbal Ingredients - 100 Ml",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/K40120/everherb-by-pharmeasy-pain-relief-oil-blend-of-8-powerful-herbal-ingredients-100-ml-1-1654165875.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Value Store",
+            "id": 91
+        },
+        {
+            "price": 99,
+            "productName": "Liveasy Essentials Tongue Cleaner (Pack Of 2)",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/H12065/liveasy-essentials-tongue-cleaner-pack-of-2-1-1654256934.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Value Store",
+            "id": 92
+        },
+        {
+            "price": 519.48,
+            "productName": "Liveasy Essentials Diabetic & Orthopedic Slippers - Electric Blue Women- Size Uk-8",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/U51159/liveasy-essentials-diabetic-orthopedic-slippers-electric-blue-women-size-uk-8-2-1648577994.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Accessories And Wearables",
+            "id": 93
+        },
+        {
+            "price": 2309.3,
+            "productName": "The White Willow Cervical Orthopedic Memory Foam Cooling Gel Xs Contour Neck Support Pillow Multi",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/W79899/the-white-willow-cervical-orthopedic-memory-foam-cooling-gel-xs-contour-neck-support-pillow-multi-2-1641792208.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Accessories And Wearables",
+            "id": 94
+        },
+        {
+            "price": 658.6,
+            "productName": "Tynor C 03 Elastic Shoulder Immobiliser Belt Size Xl",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/X16122/tynor-c-03-elastic-shoulder-immobiliser-belt-size-xl-2-1641790908.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Accessories And Wearables",
+            "id": 95
+        },
+        {
+            "price": 385,
+            "productName": "Comfrey Adult Diapers Medium - 10 Units",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/I00055/comfrey-adult-diapers-medium-10-units-2-1641398917.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Accessories And Wearables",
+            "id": 96
+        },
+        {
+            "price": 999.75,
+            "productName": "Accusure Pulse Oximeter",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/P91768/accusure-pulse-oximeter-2-1654234170.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Accessories And Wearables",
+            "id": 97
+        },
+        {
+            "price": 735,
+            "productName": "N95 Mask Packet Of 5 (Buy 2 & Get 3 Free)",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/M26466/n95-mask-packet-of-5-buy-2-get-3-free-1-1654234405.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Accessories And Wearables",
+            "id": 98
+        },
+        {
+            "price": 232.5,
+            "productName": "Beurer Ft 09/1 Clinical Thermometer",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/Z36722/beurer-ft-09-1-clinical-thermometer-2-1654232977.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Accessories And Wearables",
+            "id": 99
+        },
+        {
+            "price": 70.03,
+            "productName": "Tri-Activ N95 Masks With 6 Layer Protection Anti-Virus Coating 99.5% Filtration Efficiency",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/K63117/tri-activ-n95-masks-with-6-layer-protection-anti-virus-coating-995-filtration-efficiency-1-1654165670.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Accessories And Wearables",
+            "id": 100
+        },
+        {
+            "price": 1382.25,
+            "productName": "Dr Morepen Bp One Bp 02 Bp Monitor",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/I34090/dr-morepen-bp-one-bp-02-bp-monitor-2-1654166980.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Accessories And Wearables",
+            "id": 101
+        },
+        {
+            "price": 1404,
+            "productName": "Bpl Smart Oxy Finger Tip Pulse Black Oximeter (Black)",
+            "image": "https://cdn01.pharmeasy.in/dam/products_otc/M67325/bpl-smart-oxy-finger-tip-pulse-black-oximeter-black-2-1654234561.jpg?dim=320x320&dpr=1&q=100",
+            "category": "Accessories And Wearables",
+            "id": 102
+        }
+    ];
+    let res = JSON.stringify(data);
+    let products = JSON.parse(res)
+
+    let append = (products) => {
+        let container = document.querySelector("#product");
+        container.innerHTML = null;
+        products.forEach((el) => {
+            let { image, productName, price, category } = el;
+
+            let div = document.createElement('div');
+            div.setAttribute('class', "item");
+            let img = document.createElement('img');
+            img.src = image;
+            let h3 = document.createElement('h3')
+            h3.innerText = productName;
+            let p = document.createElement('p')
+            p.innerText = `Price : ${price} ₹`;
+            let btn = document.createElement('button');
+            btn.innerText = "Add To Cart";
+            btn.addEventListener("click", function () {
+                addToCart(el);
+            })
+            div.append(img, h3, p, btn)
+            container.append(div);
+        })
+
+    };
+
+    append(products)
+
+    function addToCart(el) {
+        console.log(el)
+    }
+
+
+
+    let Skin_Care = () => {
+        let checkBox = document.querySelector('#skin');
+        let skinCare = data.filter((el) => {
+            return el.category == "Skin Care";
+        });
+        if (checkBox.checked) {
+            append(skinCare)
+        }
+    }
+
+    let Personal = () => {
+        let checkBox = document.querySelector('#personal');
+        let personalCare = data.filter((el) => {
+            return el.category == "Personal Care";
+        });
+        if (checkBox.checked) {
+            append(personalCare)
+        }
+    }
+    let Home = () => {
+        let checkBox = document.querySelector('#home');
+        let homeCare = data.filter((el) => {
+            return el.category == "Home Care";
+        });
+        if (checkBox.checked) {
+            append(homeCare)
+        }
+    }
+
+    let Ayurvedic = () => {
+        let checkBox = document.querySelector('#ayurvedic');
+        let ayurvedic = data.filter((el) => {
+            return el.category == "Ayurvedic Care";
+        });
+        if (checkBox.checked) {
+            append(ayurvedic)
+        }
+    }
+
+    let Sexual = () => {
+        let checkBox = document.querySelector('#sexual');
+        let sexualWellness = data.filter((el) => {
+            return el.category == "Sexual Wellness";
+        });
+        if (checkBox.checked) {
+            append(sexualWellness)
+        }
+    }
+    let Covid = () => {
+        let checkBox = document.querySelector('#covid');
+        let covidCare = data.filter((el) => {
+            return el.category == "Covid Care";
+        });
+        if (checkBox.checked) {
+            append(covidCare)
+        }
+    }
+    let Beauty = () => {
+        let checkBox = document.querySelector('#beauty');
+        let beauty = data.filter((el) => {
+            return el.category == "Beauty";
+        });
+        if (checkBox.checked) {
+            append(beauty)
+        }
+    }
+    let Accessories = () => {
+        let checkBox = document.querySelector('#accessories');
+        let accessories = data.filter((el) => {
+            return el.category == "Accessories And Wearables";
+        });
+
+        if (checkBox.checked) {
+            append(accessories)
+        }
+    }
+    let FoodDrinks = () => {
+        let checkBox = document.querySelector('#food-drinks');
+        let foodDrinks = data.filter((el) => {
+            return el.category == "Health Food And Drinks";
+        });
+        if (checkBox.checked) {
+            append(foodDrinks)
+        }
+    }
+    let Value_Store = () => {
+        let checkBox = document.querySelector('#value-store');
+        let valueStore = data.filter((el) => {
+            return el.category == "Value Store";
+        });
+        if (checkBox.checked) {
+            append(valueStore)
+        }
+    }
+    let Devices = () => {
+        let checkBox = document.querySelector('#device');
+        let devices = data.filter((el) => {
+            return el.category == "Health Care Devices";
+        });
+
+        if (checkBox.checked) {
+            append(devices)
+        }
+    }
+
+    let sort = document.querySelector("#sorting");
+    sort.addEventListener("change", sortData)
+
+    function sortData() {
+        let value = document.querySelector("#sorting").value;
+        if (value == "l-to-h") {
+            let sort_LToH = products.sort((a, b) => {
+                return a.price - b.price;
+            });
+            append(sort_LToH)
+        };
+
+        if (value == "h-to-l") {
+            let sort_HtoL = products.sort((a, b) => {
+                return b.price - a.price;
+            });
+            append(sort_HtoL)
+        };
+    };
+
+
+
+
+
+
+
+</script>
