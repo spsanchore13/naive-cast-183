@@ -836,9 +836,19 @@
 
     append(products)
 
+
     function addToCart(el) {
-        console.log(el)
-    }
+        let sys = localStorage.getItem('system');
+        if (sys == "online") {
+            let cartArr = JSON.parse(localStorage.getItem("cartData")) || [];
+            cartArr.push(el)
+            localStorage.setItem("cartData", JSON.stringify(cartArr))
+            alert("Added To Cart")
+        } else {
+            alert("You Are Not Logged In")
+        }
+    };
+
 
 
 
