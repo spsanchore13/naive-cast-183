@@ -1,101 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Online Shoping at pharmeasy</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="cart.css" />
-    <script
-      src="https://kit.fontawesome.com/21698c5801.js"
-      crossorigin="anonymous"
-    ></script>
-    <style>
-      .delevery {
-        font-weight: bold;
-        color: lightgray;
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Shoping at pharmeasy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style/cart.css" />
+  <script src="https://kit.fontawesome.com/21698c5801.js" crossorigin="anonymous"></script>
+  <!-- <link rel="stylesheet" href="./style/navbar.css"> -->
+  <style>
+    .delevery {
+      font-weight: bold;
+      color: lightgray;
+    }
+
+    @media all and (min-width: 200px) and (max-width: 900px) {
+      body {
+        box-sizing: border-box;
+        /* overflow: hidden; */
       }
-      @media all and (min-width: 200px) and (max-width: 900px) {
-        body {
-          box-sizing: border-box;
-          /* overflow: hidden; */
-        }
-        .headh1 {
-          text-align: center;
-        }
-        .main_containe {
-          width: 90vw;
-        }
-        #cart_quantity {
-          text-align: center;
-          margin-top: -10px;
-          margin-bottom: -10px;
-          color: black;
-        }
-        .cart {
-          /* flex-direction: column; */
-          display: block;
-          /* padding: 50px; */
-          /* margin: 20px; */
-        }
-        .cart p {
-          font-size: 14px;
-          margin-bottom: -5px;
-        }
-        .cart > div:first-child {
-          width: 90%;
-        }
-        .cart_div {
-          height: auto;
-          width: 100%;
-        }
-        .cart > div:last-child {
-          width: 100%;
-        }
-        .fav_main {
-          flex-wrap: wrap;
-        }
-        .qty {
-          margin-left: 10px;
-        }
-        .price_container > div {
-          width: 90%;
-          margin: auto;
-        }
-        h3 {
-          line-height: 18px;
-          font-size: 18px;
-        }
-        h5 {
-          font-size: 14px;
-        }
-        h2 {
-          font-size: 10px;
-          color: white;
-        }
+
+      .headh1 {
+        text-align: center;
       }
-    </style>
-  </head>
 
-  <body>
-    <!-- header start -->
+      .main_containe {
+        width: 90vw;
+      }
 
-    <!-- header end -->
+      #cart_quantity {
+        text-align: center;
+        margin-top: -10px;
+        margin-bottom: -10px;
+        color: black;
+      }
 
-    <div class="main_container">
-      <div>
-        <h1 class="headh1">Your Shopping Basket</h1>
-      </div>
-      <h2 id="cart_quantity"></h2>
-      <div class="cart">
-        <div id="cart_content">
-          <!-- <div class="cart_div">
+      .cart {
+        /* flex-direction: column; */
+        display: block;
+        /* padding: 50px; */
+        /* margin: 20px; */
+      }
+
+      .cart p {
+        font-size: 14px;
+        margin-bottom: -5px;
+      }
+
+      .cart>div:first-child {
+        width: 90%;
+      }
+
+      .cart_div {
+        height: auto;
+        width: 100%;
+      }
+
+      .cart>div:last-child {
+        width: 100%;
+      }
+
+      .fav_main {
+        flex-wrap: wrap;
+      }
+
+      .qty {
+        margin-left: 10px;
+      }
+
+      .price_container>div {
+        width: 90%;
+        margin: auto;
+      }
+
+      h3 {
+        line-height: 18px;
+        font-size: 18px;
+      }
+
+      h5 {
+        font-size: 14px;
+      }
+
+      h2 {
+        font-size: 10px;
+        color: white;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- header start -->
+  <!-- <div id="navbar"></div> -->
+  <!-- header end -->
+
+  <div class="main_container">
+    <div>
+      <h1 class="headh1">Your Shopping Basket</h1>
+    </div>
+    <h2 id="cart_quantity"></h2>
+    <div class="cart">
+      <div id="cart_content">
+        <!-- <div class="cart_div">
                     <div>
                         <div>
                             <img src="https://lmsin.net/cdn-cgi/image/h=294,w=196,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009709144-1000009709143_01-2100.jpg"
@@ -115,78 +126,66 @@
                     </div>
 
                 </div> -->
-          <!-- appending cart here -->
+        <!-- appending cart here -->
+      </div>
+      <div class="price_container">
+        <div>
+          Deliver to
+          <input type="number" name="" id="pincode" placeholder="Enter PinCode" />
+          <button>Check</button>
         </div>
-        <div class="price_container">
+        <div>
+          <img src="https://assets.pharmeasy.in/web-assets/dist/746d1853.svg?dim=0x45&dpr=1&q=100" width="93.23"
+            height="67.02" alt="Gift Box Icon" />
           <div>
-            Deliver to
-            <input
-              type="number"
-              name=""
-              id="pincode"
-              placeholder="Enter PinCode"
-            />
-            <button>Check</button>
-          </div>
-          <div>
-            <img
-              src="https://assets.pharmeasy.in/web-assets/dist/746d1853.svg?dim=0x45&dpr=1&q=100"
-              width="93.23"
-              height="67.02"
-              alt="Gift Box Icon"
-            />
-            <div>
-              <h3>Offers for you ! <span id="promoSelect">Select</span></h3>
-              <p>Choose and apply voucher in 2 simple steps</p>
-            </div>
-          </div>
-          <div>
-            <div>
-              <p>Total MRP</p>
-              <p class="total_price">123</p>
-            </div>
-            <div>
-              <p>Offer discount</p>
-              <p class="total_discount">123</p>
-            </div>
-            <div>
-              <p>Shipping charge</p>
-              <p>Free</p>
-            </div>
-            <div>
-              <p>Total</p>
-              <p class="total_payment"></p>
-            </div>
-            <p class="checkout">Proceed To Buy</p>
+            <h3>Offers for you ! <span id="promoSelect">Select</span></h3>
+            <p>Choose and apply voucher in 2 simple steps</p>
           </div>
         </div>
-        <div class="fav_item_main_container">
-          <!-- <h1>my name is rahul</h1> -->
+        <div>
+          <div>
+            <p>Total MRP</p>
+            <p class="total_price">123</p>
+          </div>
+          <div>
+            <p>Offer discount</p>
+            <p class="total_discount">123</p>
+          </div>
+          <div>
+            <p>Shipping charge</p>
+            <p>Free</p>
+          </div>
+          <div>
+            <p>Total</p>
+            <p class="total_payment"></p>
+          </div>
+          <p class="checkout">Proceed To Buy</p>
         </div>
+      </div>
+      <div class="fav_item_main_container">
+        <!-- <h1>my name is rahul</h1> -->
       </div>
     </div>
-    <div class="promo_container">
-      <div>
-        <p>Promo codes</p>
-        <p id="cutButton">X</p>
-      </div>
-      <div>
-        <input
-          type="text"
-          name=""
-          id="promocode"
-          placeholder="Enter voucher code"
-        />
-        <input type="button" value="Apply" id="applyPromocode" />
-      </div>
-      <div>
-        <button id="okey_btn">OKEY</button>
-      </div>
+  </div>
+  <div class="promo_container">
+    <div>
+      <p>Promo codes</p>
+      <p id="cutButton">X</p>
     </div>
+    <div>
+      <input type="text" name="" id="promocode" placeholder="Enter voucher code" />
+      <input type="button" value="Apply" id="applyPromocode" />
+    </div>
+    <div>
+      <button id="okey_btn">OKEY</button>
+    </div>
+  </div>
 
-    <!-- footer part -->
-  </body>
+  <!-- footer part -->
+</body>
+
 </html>
 
 <script></script>
-<script src="cart.js"></script>
+<script src="./script/cart.js"></script>
+<!-- <script src="./script/navbar.js" type="module"></script> -->

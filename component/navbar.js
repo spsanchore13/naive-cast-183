@@ -16,13 +16,13 @@ let navbar = () => {
 <div id="bottombar">
     <div>
         <p>
-            <a href="">Order Medicines</a>
+            <a href="../order_online_sec/OM.html">Order Medicines</a>
         </p>
         <p>
-            <a href="">Healthcare Products</a>
+            <a href="../gpu_3_category/cetogary.html">Healthcare Products</a>
         </p>
         <p>
-            <a href="">Lab Tests</a>
+            <a href="../gpu_3_lab_test/lab_test.html">Lab Tests</a>
         </p>
         <p>
             <a href="">RTPCR</a>
@@ -84,10 +84,10 @@ let navbar = () => {
                 <ion-icon name="flower-outline"></ion-icon>
                 Offers
             </a></p>
-        <p><a href="">
+        <p id="cart">
                 <ion-icon name="cart-outline"></ion-icon>
                 Cart
-            </a></p>
+            </p>
     </div>
 </div>`
 }

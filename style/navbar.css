@@ -14,6 +14,7 @@
     border-bottom: 1px solid gray;
     font-family: sans-serif;
     background-color:#10847e;
+    z-index: 9;
    
 }
 
@@ -59,6 +60,7 @@
 }
 
 #topbar img{
+    cursor: pointer;
     width: 15%;
 }
 
@@ -118,14 +120,9 @@
     top: 0;
     height: 100vh;
     border: 1px solid #f1f1f1;
-    z-index: 1;
+    z-index: 9;
+    background-color: white;
 }
-
-/* #myForm {
-    position: fixed;
-    right: -500px;
-    transition: right 2s;
-} */
 
 
 .login-form {
@@ -189,7 +186,8 @@
     right: 0;
     height: 100vh;
     border: 1px solid #f1f1f1;
-    z-index: 1;
+    z-index: 9;
+    background-color: white;
 }
 
 
@@ -259,6 +257,10 @@
 .signup-form-top img {
     width: 40%;
     margin-left: 30px;
+}
+
+#cart{
+    cursor: pointer;
 }
 
 /* #suggestion{

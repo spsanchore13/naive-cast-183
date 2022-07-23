@@ -109,3 +109,22 @@ let getUserDetail = async (username, token) => {
     let data = await response.json();
     localStorage.setItem("user", JSON.stringify(data))
 }
+
+
+
+
+
+document.querySelector("#cart").addEventListener("click", goTOcart);
+function goTOcart() {
+    let sys = localStorage.getItem("system");
+    if (sys == "online") {
+        window.location.href = "cart.html";
+    } else {
+        alert("Please Check You Are Not Log In !")
+    }
+};
+
+document.querySelector("#topbar").addEventListener("click", sendTop);
+function sendTop() {
+    window.location.href = "../index.html"
+}
