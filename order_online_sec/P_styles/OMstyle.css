@@ -1,0 +1,30 @@
+.carousel-cell{
+    /* height: 500px;  */
+    /* margin-right: 10px;
+    border-radius: 15px; */
+    background-size: cover;
+    background-position: center ;
+    /* align-items:center; */
+}
+/* .carousel{
+    margin: 8%;
+} */
+
+.carousel-cell:before{
+display: block;
+content:'';
+}
+.cero1{
+width:35%
+}
+.cero2{
+    width:66%
+    }
+.flickity-prev-next-button {
+    display:none;
+
+}
+/* .cero3{
+    width:36%
+
+} */
