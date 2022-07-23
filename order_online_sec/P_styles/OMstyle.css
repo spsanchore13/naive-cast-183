@@ -24,6 +24,36 @@ width:35%
     display:none;
 
 }
+
+#call_action{
+    display:flex;
+
+}
+.gp,.as{
+    display: flex;
+
+    background-color: #4B4B4B;
+    align-items: center;
+    gap: 42px;
+    margin-bottom: 20px;
+    padding: 16px;
+    border-radius: 8px;
+}
+.gp>img,.as>img{
+    width:10%
+
+}
+
+.gp>p,.as>p{
+    color: white;
+}
+
+.phone>img{
+    width:50%
+}
+.stors>h4{
+    margin-bottom: 20px;
+}
 /* .cero3{
     width:36%
 

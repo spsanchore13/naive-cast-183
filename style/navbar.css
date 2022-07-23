@@ -74,7 +74,7 @@
     margin:10px 20%;
 }
 
-#navbar #bottombar a,p{
+#navbar #bottombar a,div#bottombar>div:first-child>*{
     display: flex;
     align-items: center;
     gap: 8px;

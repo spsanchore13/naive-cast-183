@@ -55,7 +55,7 @@ div#category_gall>*>p{
 }
 
 div#lab_pub>*{
-    margin-left: 15px;
+    margin-left: 25px;
 }
 div#lab_pub>*>*{
     margin-bottom: 30px;
@@ -106,3 +106,15 @@ div#Lab_doc>*{
 div#Lab_doc>*>h3{
     margin-bottom: 30px;
 }
+ div#categor_doc>*>h4,div#categor_doc>*>p,div#categor_doc>*>UL,div#lab_pub>*>h4,div#lab_pub>*>p{
+    color: #4f585e;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+ }
+
+ div#categor_doc>*>h4,div#lab_pub>div>*>h4{
+    font-weight: 600;
+
+ }
