@@ -18,12 +18,12 @@
 }
 
 
-p{
+.text{
     padding-top: 1rem;
     color:#4b3663;
 }
 
-h3{
+.heading{
     color: #30363c;
     margin-top: 1.5rem;
 }
@@ -84,7 +84,7 @@ h3{
     color: #30363c;
 }
 
-img{
+.footer_img{
     height: 5vh;
     margin-left: 1rem;
 }

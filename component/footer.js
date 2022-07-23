@@ -92,13 +92,13 @@ let footer = () => {
     </div>
 
     <div class="download">
-        <h3>Download the App for Free</h3>
+        <h3 class="heading">Download the App for Free</h3>
         <img src="images\googlePlay.svg" alt="Play Store">
         <img src="images\appStore.svg" alt="Apple Store">
     </div>
 
     <div class="follow">
-        <h3>Follow us on</h3>
+        <h3 class="heading">Follow us on</h3>
         <div class="social">
             <a href="https://www.instagram.com/pharmeasyapp/"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://www.facebook.com/pharmeasy/"><i class="fa-brands fa-facebook"></i></a>
@@ -111,18 +111,18 @@ let footer = () => {
 <div class="main2">
 
     <div class="partners">
-        <h3>Our Payment Partners</h3>
+        <h3 class="heading">Our Payment Partners</h3>
         <div class="logo">
-            <img src="images\gpay.png" alt="gpay">
-            <img src="images\paytm.png" alt="paytm">
-            <img src="images\phonepe.png" alt="phonepay">
-            <img src="images\amazon.png" alt="amazonpay">
-            <img src="images\mobikwik.png" alt="mobikwik">
-            <img src="images\olamoney.png" alt="olamoney">
-            <img src="images\maestro.png" alt="maestro">
-            <img src="images\mastercard.png" alt="mastercard">
-            <img src="images\visa.png" alt="Visa">
-            <img src="images\rupay.png" alt="Rupay">
+            <img class="footer_img" src="../images/gpay.png" alt="gpay">
+            <img class="footer_img" src="../images/paytm.png" alt="paytm">
+            <img class="footer_img" src="../images/phonepe.png" alt="phonepay">
+            <img class="footer_img" src="../images/amazon.png" alt="amazonpay">
+            <img class="footer_img" src="../images/mobikwik.png" alt="mobikwik">
+            <img class="footer_img" src="../images/olamoney.png" alt="olamoney">
+            <img class="footer_img" src="../images/maestro.png" alt="maestro">
+            <img class="footer_img" src="../images/mastercard.png" alt="mastercard">
+            <img class="footer_img" src="../images/visa.png" alt="Visa">
+            <img class="footer_img" src="../images/rupay.png" alt="Rupay">
         </div>
     </div>
 
@@ -136,4 +136,4 @@ let footer = () => {
 
 }
 
-export default footer;
+export default footer();
