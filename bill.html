@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing</title>
+   <style>
+          @import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Hubballi&display=swap');
+       *{
+    font-family: 'Baloo 2', cursive;
+       }
+       
+    table{
+        border:1px solid grey;
+        gap:10px;
+        border-spacing: 0cm;
+    }
+    
+    th{
+        border:1px solid grey;
+        padding: 0px;
+    }
+       
+    td{
+        border:1px solid grey;
+        text-align: center;
+        
+    }
+    #bill{
+        width: 65%;
+        margin: auto;
+    }
+    #bill>h1{
+        text-align: center;
+    }
+    thead{
+        background-color: #10847e ;
+        color: white;
+    }
+   
+   </style>
+</head>
+<body>
+    <div id="bill">
+        <h1>BILL</h1>
+        <table>
+            <thead>
+                <th>FROM</th>
+                <th>TO</th>
+                <th>CONTACT NUMBER</th>
+                <th>STATE</th>
+                <th>CITY</th>
+                <th>PIN CODE</th>
+                <th>STREET NAME</th>
+                <th>LANDMARK</th>
+                <th>TOTAL</th>
+                <th>TRANSACTION ID</th>
+                <th>PAYMENT DETAILS</th>
+            </thead>
+            <tbody>
+    
+            </tbody>
+        </table>
+    </div>
+   
+   
+</body>
+</html>
+<script>
+    let otp=localStorage.getItem("otp");
+    let enterOtp=localStorage.getItem("enterOtp");
+   let transactionid=Math.random().toString(36).slice(2);
+   let dataObjFromLs=JSON.parse(localStorage.getItem("customerData"));
+   let tr=document.createElement("tr");
+   let td1=document.createElement("td");
+   td1.innerText="pharmeasy";
+   let td2=document.createElement("td");
+   td2.innerText=dataObjFromLs.customerName;
+   let td3=document.createElement("td");
+   td3.innerText=dataObjFromLs.customerMobile;
+   let td4=document.createElement("td");
+   td4.innerText=dataObjFromLs.customerCity;
+   let td5=document.createElement("td");
+   td5.innerText=dataObjFromLs.customerPincode;
+   let td6=document.createElement("td");
+   td6.innerText=dataObjFromLs.customerStreet;
+   let td7=document.createElement("td");
+   td7.innerText=dataObjFromLs.customerLandmark;
+   let td8=document.createElement("td");
+   td8.innerText=transactionid;
+   let td9=document.createElement("td");
+   if(otp!=enterOtp){
+    td9.innerText="Failed";
+    td9.style.color="red";
+    alert("Invalid OTP");
+   }else{
+   td9.innerText="Success";
+   td9.style.color="green";
+   }
+  
+   let td10=document.createElement("td");
+   td10.innerText=localStorage.getItem("total_payment");
+   let td11=document.createElement("td");
+   td11.innerText=dataObjFromLs.customerState;
+tr.append(td1,td2,td3,td11,td4,td5,td6,td7,td10,td8,td9);
+document.querySelector("tbody").append(tr);
+   
+</script>
