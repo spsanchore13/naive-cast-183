@@ -112,7 +112,7 @@ button {
 }
 
 .cart_div>div:last-child h5 {
-    color: var(--color);
+    color:#10847e;
     /* border-right: 1px solid var(--borderColor); */
     font-size: 15px;
     cursor: pointer;
@@ -147,8 +147,8 @@ button {
 
 .price_container>div:first-child>button {
     padding: 10px 16px;
-    color: var(--color);
-    background-color: white;
+    color: white;
+    background-color:#10847e;
     border-radius: 4px;
     border: none;
     border: 1px solid var(--color);
@@ -188,7 +188,7 @@ button {
 }
 
 #promoSelect {
-    color: var(--color);
+    color:#10847e;
     text-align: right;
     cursor: pointer;
 }
@@ -225,7 +225,7 @@ button {
 
 .checkout {
     padding: 16px 18px;
-    background-color: var(--color);
+    background-color: #10847e;
     color: white;
     font-weight: 400;
     text-align: center;
@@ -282,7 +282,7 @@ button {
 
 #applyPromocode {
     padding: 10px 16px;
-    color: var(--color);
+    color: #10847e;
     background-color: white;
     border-radius: 4px;
     border: none;
@@ -297,7 +297,7 @@ button {
 
 .promo_container button {
     padding: 16px 18px;
-    background-color: var(--color);
+    background-color:#10847e;
     color: white;
     font-weight: 400;
     text-align: center;
