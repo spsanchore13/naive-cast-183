@@ -10,6 +10,11 @@
     margin: 8%;
 } */
 
+*{
+    font-family: 'Open Sans', sans-serif;
+
+}
+
 .carousel-cell:before{
 display: block;
 content:'';

@@ -8,7 +8,11 @@
     <link rel="stylesheet" href="../style/navbar.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
     <link rel="stylesheet" href="P_styles/OMstyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="../footer.css">
@@ -18,6 +22,7 @@
             margin: 0px;
             padding: 0px;
             box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
 
         }
 
@@ -108,7 +113,7 @@
             align-items: center;
             /* position: absolute; */
             z-index: 20;
-            border: 1px solid;
+            border-radius: 12px;
             column-gap: 52px;
             margin: auto;
             width: fit-content;
@@ -132,17 +137,25 @@
 
         .P_section2 {
             margin: auto;
+            display: flex;
+    flex-direction: column;
+    gap: 50px
         }
 
         .P_section2>div:nth-child(1),
         .P_section2>div:nth-child(2) {
             border: 1px solid black;
             display: flex;
+            padding:15px;
             column-gap: 10px;
+            border-radius: 10px;
         }
-
+        /* .P_section2>div:nth-child(1)>p
+        .P_section2>div:nth-child(2)>p{
+        } */
         .P_section2 p {
-            color: black;
+            color:#4f585e
+            /* color: black; */
         }
 
 
@@ -173,13 +186,16 @@
         }
 
         div#P_q_and_a>* {
-            border: 1px solid black;
-            padding: 10px 20px
+            border: 1px solid #c1bbbb;
+            padding: 10px 20px;
+            margin-bottom: 50px;
+            border-radius: 10px;
         }
 
 
         div#div#P_q_and_a>* {
             margin-bottom: 15px;
+            
         }
 
         #P_adv {
@@ -192,6 +208,41 @@
         #P_adv>div:nth-child(2)>img,
         #P_adv>div:nth-child(3)>img {
             width: 9%
+        }
+        .P-searchElements,.p_searchElement_title{
+            color: white;
+        }
+        .search_name{
+color: #4f585e;
+font-size:16px;
+        }
+
+        div#P_doc_1 h4{
+            color: #4f585e;
+            font-size:16px;
+            font-weight: 700;
+            line-height:24px;
+        }
+
+        
+        div#P_doc_1 p,div#P_doc_1 ul,div#P_doc_1 ol{
+            color: #8897a2;
+            font-size:14px;
+            font-weight: 400;
+            line-height:24px;
+        }
+        
+        .pqsndAHtag{
+            color: #4f585e;
+            font-size:16px;
+            font-weight: 700;
+            line-height:24px;
+        }
+        div#P_q_and_a>* p,div#P_q_and_a>* ul,.PPcom{
+            color: #8897a2;
+            font-size:14px;
+            font-weight: 400;
+            line-height:24px;
         }
     </style>
 
@@ -212,18 +263,18 @@
                     <div>
                         <div style="width: 184px">
                             <img src="P_icons/discount.svg" />
-                            <p>Flat 15% Off</p>
+                            <p class="P-searchElements">Flat 15% Off</p>
                         </div>
                         <div style="width: 184px">
                             <img src="P_icons/varify.svg" />
-                            <p>1 Lakh+ Products</p>
+                            <p class="P-searchElements">1 Lakh+ Products</p>
                         </div>
                         <div style="width: 184px">
                             <img src="P_icons/return.svg" />
-                            <p>Easy Returns</p>
+                            <p class="P-searchElements">Easy Returns</p>
                         </div>
                     </div>
-                    <p>Search for Medicines / Healthcare Products</p>
+                    <p class="p_searchElement_title">Search for Medicines / Healthcare Products</p>
                     <div>
                         <div>
                             <p>Select Pincode</p>
@@ -231,7 +282,7 @@
                                 expand_more
                             </span>
                         </div>
-                        <h4>Search for Medicines / Healthcare Products</h4>
+                        <h4 class="search_name">Search for Medicines / Healthcare Products</h4>
                         <img src="P_icons/search.svg" />
                     </div>
                 </div>
@@ -331,7 +382,7 @@
             <div id="P_q_and_a">
                 <div>
                     <div>
-                        <h4>Is buying Medicine inlone safe?</h4>
+                        <h4 class="pqsndAHtag" >Is buying Medicine inlone safe?</h4>
                         <span class="material-symbols-outlined " id="exmore">
                             expand_more
                         </span>
@@ -348,7 +399,7 @@
                 </div>
                 <div>
                     <div>
-                        <h4>Why choose ous for your medicine home delivery</h4>
+                        <h4 class="pqsndAHtag" >Why choose ous for your medicine home delivery</h4>
                         <span class="material-symbols-outlined " id="exmore">
                             expand_more
                         </span>
@@ -373,7 +424,7 @@
                 </div>
                 <div>
                     <div>
-                        <h4>How do I order medicine from PharmEasy</h4>
+                        <h4 class="pqsndAHtag" >How do I order medicine from PharmEasy</h4>
                         <span class="material-symbols-outlined " id="exmore">
                             expand_more
                         </span>
@@ -402,7 +453,7 @@
                 </div>
                 <div>
                     <div>
-                        <h4>When will PharmEasy deliver my medicine</h4>
+                        <h4 class="pqsndAHtag" >When will PharmEasy deliver my medicine</h4>
                         <span class="material-symbols-outlined " id="exmore">expand_more</span>
                         <span class="material-symbols-outlined" id="exless">
                             expand_less
@@ -416,7 +467,7 @@
                 </div>
                 <div>
                     <div>
-                        <h4>Do I get descount/cashback on ordering medicine online with pharmacy</h4>
+                        <h4 class="pqsndAHtag" >Do I get descount/cashback on ordering medicine online with pharmacy</h4>
                         <span class="material-symbols-outlined " id="exmore">
                             expand_more
                         </span>
@@ -431,7 +482,7 @@
                 </div>
                 <div>
                     <div>
-                        <h4>If medicine I want to order is unavailable what should I do ?</h4>
+                        <h4 class="pqsndAHtag" >If medicine I want to order is unavailable what should I do ?</h4>
                         <span class="material-symbols-outlined " id="exmore">
                             expand_more
                         </span>
@@ -447,7 +498,7 @@
                 </div>
                 <div>
                     <div>
-                        <h4>When will i recive in my order</h4>
+                        <h4 class="pqsndAHtag" >When will i recive in my order</h4>
                         <span class="material-symbols-outlined " id="exmore">
                             expand_more
                         </span>
@@ -466,7 +517,7 @@
                 </div>
                 <div>
                     <div>
-                        <h4>What is the shelf life of medicin that I order</h4>
+                        <h4 class="pqsndAHtag" >What is the shelf life of medicin that I order</h4>
                         <span class="material-symbols-outlined " id="exmore">
                             expand_more
                         </span>
@@ -480,7 +531,7 @@
                 </div>
                 <div>
                     <div>
-                        <h4>How can I change my order </h4>
+                        <h4 class="pqsndAHtag" >How can I change my order </h4>
                         <span class="material-symbols-outlined " id="exmore">
                             expand_more
                         </span>
@@ -495,7 +546,7 @@
                 <div>
                     <div>
 
-                        <h4 onclick="runCom()">How do I cancel my order </h4>
+                        <h4  class="pqsndAHtag" onclick="runCom()">How do I cancel my order </h4>
                         <span class="material-symbols-outlined" id="exmore">
                             expand_more
                         </span>
