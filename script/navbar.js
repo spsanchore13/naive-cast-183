@@ -94,7 +94,7 @@ async function login(event) {
         alert("Login Successfull")
         getUserDetail(username, res.token)
         localStorage.setItem("system", "online")
-        // window.location.reload();
+        window.location.reload();
     }
 }
 
@@ -118,7 +118,7 @@ document.querySelector("#cart").addEventListener("click", goTOcart);
 function goTOcart() {
     let sys = localStorage.getItem("system");
     if (sys == "online") {
-        window.location.href = "cart.html";
+        window.location.href = "../cart.html";
     } else {
         alert("Please Check You Are Not Log In !")
     }
@@ -127,4 +127,26 @@ function goTOcart() {
 document.querySelector("#topbar").addEventListener("click", sendTop);
 function sendTop() {
     window.location.href = "../index.html"
+}
+
+let sys = localStorage.getItem("system");
+if (sys == "online") {
+
+    document.querySelector(".open-btn").innerHTML = null;
+    document.querySelector(".open-btn-signup").innerHTML = null;
+
+    let name = localStorage.getItem("user");
+    name = JSON.parse(name);
+    let user = document.createElement("p");
+    user.innerText = name.name;
+    document.querySelector("#log-out").append(user);
+} else {
+    let user = document.createElement("p");
+    user.innerText = "User";
+    document.querySelector("#log-out").append(user);
+}
+
+document.querySelector("#log-out").addEventListener("click", log_out);
+function log_out() {
+    localStorage.setItem("system", "offline")
 }

@@ -11,6 +11,9 @@ let navbar = () => {
     </div>
     <div id="suggestion"></div>
     </div>
+    <div id="log-out">
+    <ion-icon name="person-outline"></ion-icon>
+    </div>
 </div>
 
 <div id="bottombar">
@@ -28,7 +31,7 @@ let navbar = () => {
             <a href="">RTPCR</a>
         </p>
     </div>
-    <div>
+    <div id="user-options">
         <p class="open-btn">
             <ion-icon name="person-outline"></ion-icon>
             Log in

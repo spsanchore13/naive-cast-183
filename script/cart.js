@@ -1,7 +1,8 @@
-import navbar from "../component/navbar.js"
-document.querySelector("#navbar").innerHTML = navbar();
+// import navbar from "../component/navbar.js"
+// document.querySelector("#navbar").innerHTML = navbar();
 
 let data = JSON.parse(localStorage.getItem("cartData")) || [];
+console.log('data:', data)
 let addToFav = JSON.parse(localStorage.getItem("favDataArray")) || [];
 
 displayCart(data);
@@ -27,10 +28,10 @@ function displayCart(data) {
     </div>
     <div>
         <h3>${ele.productName}</h3>
-        <p>${ele.categories}</p>
+        <p>${ele.category}</p>
         <p><span class ="span1"> ${ele.price}  ₹ </span><span class ="span2"> ${actualPrice} ₹ </span><span class="span3"> ${saved} ₹ saved</span></p>
 
-        <p>ProductId : ${ele.Productid}</p>
+        <p>ProductId : ${ele.id}</p>
     </div>
     </div>
     <h2><p class="delsym"><i class="fa-solid fa-blinds"></i></p><span class="delevery" style="font-weight:normal;">Delivery in   </span> <span> Enter pincode above</span><span class="qty">Qty:1</span></h2> `;
