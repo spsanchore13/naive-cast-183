@@ -1,0 +1,561 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html{
+  font-size: 14px;
+}
+body{
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* <!-- 
+*************************************************************************************************************************************
+#################################### Header Section #################################################################################
+****************************************************************************************************************************************  --> */
+.sneh_header{
+  width: 100vw;
+}
+.sneh_header .bannerImg{
+  width: 99vw;
+  background-color:  #8b7ae2;
+  margin: 0rem auto;
+  padding: 1rem 0rem 10rem 0rem;
+}
+.sneh_header .bannerImg img{
+  width: 80vw;
+  display: block;
+  margin: 0rem auto;
+}
+.sneh_header .sneh_draw .img{
+  width: 100vw;
+  z-index: 10;
+}
+
+
+
+/* ************************* Facilities****************** */
+.sneh_header .sneh_facilities
+{
+  background-color: #fff;
+  width: 75vw;
+  margin: 0rem auto;
+  margin-top: -10%;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  z-index: 100;
+  box-shadow: 0px 0px 10px rgb(77, 75, 75);
+}
+.sneh_header .sneh_facilities h2{
+  color: #8b7ae2;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0rem 1rem;
+}
+.sneh_header .sneh_facilities .sneh_benifits{
+  display: flex;
+}
+.sneh_header .sneh_facilities .sneh_benifits .sneh_box{
+  display: flex;
+  margin: 1rem;
+  width: 30%;
+  padding: 1rem 0rem;
+}
+.sneh_header .sneh_facilities .sneh_benifits .sneh_box .left{
+  margin: 0rem 0.5rem;
+  padding: 0rem 0.5rem;
+}
+.sneh_header .sneh_facilities .sneh_benifits .sneh_box .sneh_right{
+  padding-left: 0.5rem;
+}
+.sneh_facilities .sneh_benifits .sneh_box .sneh_right .snehil_heading{
+  font-size: 1.2rem;
+  color: #272727;
+  font-weight: bold;
+}
+.sneh_facilities .sneh_benifits .sneh_box .sneh_right .data{
+  font: 0.8rem;
+}
+.sneh_header .sneh_facilities .additional{
+  font-size: 1.2rem;
+  color: #4b4a4a;
+  margin: 0rem 0rem 0.2rem 1rem;
+}
+.sneh_header .sneh_facilities .additionalBenefits{
+  display: flex;
+}
+.sneh_header .sneh_facilities .additionalBenefits .sneh_box{
+  display: flex;
+  width: 25vw;
+  padding: 1rem 0.5rem;
+  margin: 0rem 0.8rem;
+}
+.sneh_facilities .additionalBenefits .sneh_box .left{
+  margin-right: 0.5rem;
+}
+.sneh_facilities .additionalBenefits .sneh_box .sneh_right{
+  margin-left: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.sneh_box .left{
+  color: #31cea3;
+}
+
+
+/* <!-- 
+*************************************************************************************************************************************
+#################################### Coupon Section #################################################################################
+****************************************************************************************************************************************  --> */
+.couponSection{
+  width: 80vw;
+  margin: 1rem auto;
+  padding:1rem 0rem;
+  border-bottom: 0.2px solid rgba(204, 202, 202, 0.462);
+}
+.couponSection h3{
+  font-size: 1rem;
+  color: #393838;
+}
+
+.couponSection a .coupon{
+  border: 0.5px solid #8b7ae2;
+  border-radius: 0.5rem;
+  display: flex;
+  margin: 1rem auto;
+  padding: 1rem 0.5rem;
+}
+.couponSection a .coupon .first{
+  margin-right: 1rem;
+}
+.couponSection a .coupon .second{
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #8b7ae2;
+}
+
+.coupon .first i{
+  margin-left:1rem;
+  color:#b08ae2;
+}
+
+.couponSection a .coupon .third{
+  margin: auto 0.5rem auto auto;
+}
+.couponSection a .coupon .third .icon{
+  color: #8b7ae2;
+}
+
+.plusBtn .btn{
+  background-color: #8b7ae2;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.8rem 6rem;
+  border-radius: 0.5rem;
+  margin: 0rem auto 3rem auto;
+  display: block;
+  border: none;
+}
+.plusBtn .btn:hover{
+  background-color: #705bd8;
+}
+/* <!-- 
+*************************************************************************************************************************************
+#################################### Calculate savings Section #################################################################################
+****************************************************************************************************************************************  --> */
+.calculateSavings{
+  width: 80vw;
+  margin: 0rem auto;
+}
+.calculateSavings .data{
+  background-color: pink;
+}
+.calculateSavings .data h2{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.slider_main {
+  height: 70vh;
+  margin-top: 20px;
+  border-radius: var(--border-radiu);
+  -webkit-box-shadow: 0 3px 20px 0 rgb(0 0 0 / 23%);
+  box-shadow: 0 3px 20px 0 rgb(0 0 0 / 23%);
+  background-color: #fff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 2;
+  position: relative;
+}
+
+.inside_main {
+  width: 90%;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-right: 1px solid #f3f6fa;
+}
+
+.spend {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.range {
+  position: relative;
+  margin-top: 15px;
+}
+
+
+
+.plus_member {
+  font-size: 18px;
+  font-weight: 700;
+  color: #8573e1;
+  margin-top: 25px;
+}
+
+.price {
+  background-color: #f5f3ff;
+  font-size: 26px;
+  color: #8573e1;
+  font-weight: 700;
+  padding: 15px;
+}
+
+.inside_main {
+  width: 50%;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-right: 1px solid #f3f6fa;
+}
+
+.spend {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.table {
+  margin-bottom: 10px;
+}
+
+.table, .price {
+  margin-top: 15px;
+  border-radius: 6px;
+}
+
+.assume {
+  font-size: 12px;
+  color: #8897a2;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 20px;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  z-index: -1;
+}
+
+
+.calc_main {
+  margin-left: 0;
+}
+
+.calc {
+  height: 100px;
+  background-color: #7a67de;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  height: 10px;
+  top: 20%;
+  z-index: 1;
+}
+
+.second_main {
+  display: flex;
+  position: absolute;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.second_main_inside {
+  display: flex;
+  color: #8897a2;
+  font-size: 12px;
+  font-weight: 600;
+  position: relative;
+  padding-left: 5rem;
+}
+
+.radio {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #9d9ab0;
+  margin: 0 auto 10px;
+}
+
+.calc {
+  width: calc(27% - 7px);
+}
+
+.calc{
+  position: absolute;
+}
+
+
+.sneh_one{
+  background-color:#e2dcff;
+  padding-bottom:1.2rem;
+  padding: 1rem;
+}
+
+.two{
+ background-color: #f5f3ff;
+ padding-bottom:1rem;
+ padding: 1rem;
+}
+
+
+
+/* <!-- 
+*************************************************************************************************************************************
+#################################### Hear from some of our PLUS members Section #################################################################################
+****************************************************************************************************************************************  --> */
+
+
+.plusMember{
+  width: 80vw;
+  margin: 1rem auto;
+  padding: 1rem 0rem;
+}
+.plusMember .plusHead{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.plusMembersSlider{
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+.slide-container{
+  width: 100%;
+  padding: 0rem 0rem;
+}
+.slide-content{
+  overflow: hidden;
+}
+.card-content{
+  display: flex;
+  flex-direction: column;
+  padding: 10px 14px;
+}
+
+.overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+.overlay::before,
+.overlay::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #4070F4;
+}
+.overlay::after{
+  background-color: #FFF;
+}
+
+.card-content .name{
+  font-size: 0.9rem;
+  color: #707070dc;
+}
+.card-content .info{
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: rgb(70, 69, 69);
+}
+.card-content .description{
+  font-size:1rem;
+  color: #707070;
+  border-radius: 1rem;
+  margin: 1.5rem 0rem;
+  padding: 1rem 1.5rem;
+}
+.card-content .preeti{
+  background-color:  #f5f3ff;
+  letter-spacing: 0.04rem;
+}
+.card-content .rahul, .card-content .ashok{
+  background-color: 
+  #dbfff5;
+}
+.swiper-pagination-bullet{
+  background-color: #6E93f7;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  background-color: #4070F4;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content{
+    margin: 0 10px;
+  }
+  .swiper-navBtn{
+    display: none;
+  }
+}
+
+
+
+
+/* <!--     
+*************************************************************************************************************************************
+#################################### Frequently Asked Questions Section #################################################################################
+**************************************************************************************************************************************** --> */
+
+.sectionFAQ {
+  background-color: #fff;
+  padding-bottom: 1rem;
+}
+
+.sectionFAQ h1 {
+  margin: 25px auto;
+  width: 80vw;
+  color: rgb(20, 20, 20);
+  font-weight: 600;
+}
+
+.faq-container {
+  max-width: 80vw;
+  margin: 0 auto;
+}
+
+.faq {
+  border: 1px solid #9f90ea;
+  border-radius: 6px;
+  margin-bottom: 5px;
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.faq.active {
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faq.active::before,
+.faq.active::after {
+  font-size: 3rem;
+  position: absolute;
+  opacity: 0.2;
+  top: 10px;
+  left: 20px;
+  z-index: 0;
+}
+
+.faq.active::before {
+  color: #3498db;
+  top: -10px;
+  left: -30px;
+  transform: rotateY(180deg);
+}
+
+.faq-title {
+  margin: 0 35px 0 0;
+  font-size: 1rem;
+  color: rgb(29, 29, 29);
+}
+
+.faq-text {
+  display: none;
+  margin: 15px 0 0;
+  font-size: 0.9rem;
+  line-height: 1.1rem;
+  color: rgb(71, 70, 70);
+}
+
+.faq.active .faq-text {
+  display: block;
+}
+
+.faq-toggle {
+  background-color: transparent;
+  color: #9f90ea;
+  font-size: 0.8rem;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  padding: 0;
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  height: 30px;
+  width: 30px;
+}
+.faq-toggle .icon {
+  font-size: 0.5rem;
+  color: #9f90ea;
+}
+
+.faq-toggle .fa-chevron-up {
+  display: none;
+  background-color: transparent;
+}
+.faq.active .faq-toggle .fa-chevron-up {
+  color: #9f90ea;
+  background-color: transparent;
+  display: block;
+}
+.faq.active .faq-toggle .fa-chevron-down {
+  display: none;
+}
+
+.faq.active .faq-toggle {
+  background-color: transparent;
+}
+
+/* *************************************************************************************************************************************
+#################################### terms and Conditions #################################################################################
+**************************************************************************************************************************************** */
+.termsCondition {
+  margin: 1rem auto 5rem auto;
+  width: 80vw;
+  padding-top: 1rem;
+  border-top: 0.5px solid rgba(188, 186, 186, 0.758);
+}
+.termsCondition .terms {
+  font-weight: bold;
+  
+  color: rgb(114, 112, 112);
+  font-size: 0.9rem;
+}
+
