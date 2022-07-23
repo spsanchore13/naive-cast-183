@@ -5,15 +5,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: #eef4ff;
-    height: 140vh;
-}
 
-.main{
+
+.sneh_main{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 2rem;
+    background-color: #eef4ff;
+    height: 120vh;
 }
 
 .ourServices,.policy,.social{
@@ -21,7 +20,7 @@ body{
 }
 
 
-p{
+.sneh_text{
     padding-top: 1rem;
     color:#4b3663;
 }
@@ -31,15 +30,15 @@ h3{
     margin-top: 1.5rem;
 }
 
-.download>img{
+.sneh_download>img{
     margin-top: 1rem;
 }
 
-.download>h3{
+.sneh_download>h3{
     margin: 1rem 0 0 1rem;
 }
 
-.follow>h3{
+.sneh_follow>h3{
     margin-left: 1rem;
 }
 
@@ -55,13 +54,13 @@ h3{
 }
 
 
-.main2{
+.sneh_main2{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     /* gap: 1rem; */
 }
 
-.copyright{
+.sneh_copyright{
     /* border: 1px solid black; */
     display: flex;
     align-items:center;
@@ -75,14 +74,14 @@ h3{
     margin-top: 1rem;
 }
 
-.logo{
+.sneh_logo{
     display: grid;
     grid-template-columns: repeat(10,1fr);
     gap: .5rem;
     padding-top:1rem;
 }
 
-.partners>h3{
+.sneh_partners>h3{
     margin-left: 1rem;
     color: #30363c;
 }
@@ -95,20 +94,20 @@ img{
 
 @media all and (max-width:1000px){
    
-    .main {
+    .sneh_main {
         display: grid;
         grid-template-columns: repeat(1,1fr);
         max-width: 600px;
         margin: 0 ;
       }
 
-      .main2{
+      .sneh_main2{
         display: grid;
         grid-template-columns: repeat(1,1fr);
         /* gap: 1rem; */
     }
 
-      .one{
+      .sneh_one{
         background-color: transparent;
         border-bottom: 1px solid #9fa4a8;
         width: 60rem;
@@ -119,8 +118,8 @@ img{
         transition: 0.3s ease;
       }
 
-      .company.active::before,
-      .company.active::after {
+      .sneh_company.active::before,
+      .sneh_company.active::after {
         font-size: 7rem;
         position: absolute;
         opacity: 0.2;
@@ -129,23 +128,18 @@ img{
         z-index: 0;
 }
 
-.company.active::before {
+.sneh_company.active::before {
     color: #3498db;
     top: -10px;
     left: -30px;
     transform: rotateY(180deg);
   }
 
-  .heading {
+  .sneh_heading {
     margin: 0 35px 0 0;
   }
 
-  .text {
-    display: none;
-    margin: 5px 0 0;
-  }
-
-  .one.active .text {
+  .sneh_one.active .sneh_text {
     display: block;
   }
 
@@ -192,7 +186,7 @@ img{
     margin-top: 1rem;
 }
 
-  .copyright{
+  .sneh_copyright{
     /* border: 1px solid black; */
     display: flex;
     /* align-items:center; */
@@ -202,11 +196,11 @@ img{
     color: #374654;
 }
 
-.follow>h3{
+.sneh_follow>h3{
     margin: 1rem;
 }
 
-.social, .follow{
+.social, .sneh_follow{
     padding-top: .5rem
 }
   
@@ -217,7 +211,7 @@ img{
         display: none;
     }
 
-    .download{
+    .sneh_download{
         display: none;
     }
 }
