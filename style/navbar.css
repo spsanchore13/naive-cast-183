@@ -80,7 +80,7 @@
     gap: 8px;
     text-decoration: none;
     color: #fff;
-    font-weight: 100;
+    /* font-weight: 100;/ */
 }
 
 #bottombar > div:first-child{

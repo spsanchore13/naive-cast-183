@@ -1,5 +1,5 @@
 let footer = () => {
-    return `    <div class="main">
+    return `<div class="main">
     <div class="company">
         <div class="one">
 
@@ -136,4 +136,4 @@ let footer = () => {
 
 }
 
-export default footer();
+export default footer;

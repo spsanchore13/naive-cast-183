@@ -1,108 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment</title>
-   <link rel="stylesheet" href="payments.css">
+    <link rel="stylesheet" href="./style/payments.css">
 </head>
+
 <body>
     <div id="fl">
 
-    <div id="address">
-        <h2>Add your shipping address</h2>
-        <h5>Full Name</h5>
-        <input id="name" type="text" placeholder="Enter your name">
-        <h5>Mobile Number</h5>
-        <input id="mobile" type="text" placeholder="Mobile Number">
-        <h5>Pincode</h5>
-        <input id="pincode" type="text" placeholder="Enter your Pincode">
-        <h5>City</h5>
-        <input id="city" type="text" placeholder="Enter your city">
-        <h5>State</h5>
-        <input id="state"type="text" placeholder="Enter your state">
-        <h5>Street Name</h5>
-        <input id="street" type="text" placeholder="Enter your street">
-        <h5>Landmark</h5>
-        <input id="landmark"type="text" placeholder="Enter landmark">
-    </div>
+        <div id="address">
+            <h2>Add your shipping address</h2>
+            <h5>Full Name</h5>
+            <input id="name" type="text" placeholder="Enter your name">
+            <h5>Mobile Number</h5>
+            <input id="mobile" type="text" placeholder="Mobile Number">
+            <h5>Pincode</h5>
+            <input id="pincode" type="text" placeholder="Enter your Pincode">
+            <h5>City</h5>
+            <input id="city" type="text" placeholder="Enter your city">
+            <h5>State</h5>
+            <input id="state" type="text" placeholder="Enter your state">
+            <h5>Street Name</h5>
+            <input id="street" type="text" placeholder="Enter your street">
+            <h5>Landmark</h5>
+            <input id="landmark" type="text" placeholder="Enter landmark">
+        </div>
 
 
-    <div id="pay">
-        <div class="wallet">
-            <img src="https://cdn.pharmeasy.in/payments/wallet_icons/paytm.png" alt="">
-            <div>
-                <h2>Paytm</h2>
-                <p>Guranteed Rs.30 cashback and upto Rs.300 cashback on minimum order of Rs.600</p>
+        <div id="pay">
+            <div class="wallet">
+                <img src="https://cdn.pharmeasy.in/payments/wallet_icons/paytm.png" alt="">
+                <div>
+                    <h2>Paytm</h2>
+                    <p>Guranteed Rs.30 cashback and upto Rs.300 cashback on minimum order of Rs.600</p>
+                </div>
             </div>
-        </div>
-        
-        <div class="wallet">
-            <img src="https://cdn.pharmeasy.in/payments/amazonpay_new.png" alt="">
-            <div>
-                <h2>Amazon Pay</h2>
-                <p>Guranteed Rs.40 cashback and upto Rs.300 cashback on minimum order of Rs.800</p>
-            </div>
-        </div>
-       
-        <div class="wallet">
-            <img src="https://cdn.pharmeasy.in/payments/wallet_icons/phonepe.png" alt="">
-            <div>
-                <h2>Phonepe</h2>
-                <p>Guranteed Rs.20 cashback and upto Rs.200 cashback on minimum order of Rs.400</p>
-            </div>
-        </div>
-        
-        <div class="wallet">
-            <img src="https://cdn.pharmeasy.in/payments/wallet_icons/mobikwik.png" alt="">
-            <div>
-                <h2>Mobikwik</h2>
-                <p>Guranteed Rs.30 cashback and upto Rs.300 cashback on minimum order of Rs.600</p>
-            </div>
-        </div>
-        <div class="wallet">
-            <img src="https://consumer-app-images.pharmeasy.in/payment-icons/cod.png" alt="">
-            <div>
-                <h2>Cash on delivery</h2>
-                <p>Pay via Cash/UPI at the time of delivery</p>
-            </div>
-        </div>
-        
-        <h2>Select a payment method</h2>
-        <h4>Debit card</h4>
-        <h5>Card Number</h5>
-        <input  id="card" type="text" placeholder="Enter your 16 digit card number">
-        <h5>Expiry Date</h5>
-        <div id="exp"><input id="expiryDate"  type="date"> <input  placeholder="CVV" type="number"></div>
-        <button style="font-size:15px">save card</button>
-        <button id="view" style="font-size:15px"><a id="scd" href="savedCards.html" style="color: white;">view saved cards</a></button>
-       
-        
-        <div id="other">
-            <h2>Other Options</h2>
-            <select name="" id="select">
-                <option value="Cash on delivery">
-                  
-                    Cash on delivery
-                </option>
-                <option value="upi">
-                    UPI
-                </option>
-                
-            </select>
-            <div></div>
 
-            <div id="paynow">
-                <p>By clicking on Pay Now, you agree to our <a  href="termsandconditions.txt" id="tc">Terms and Conditions</a></p>
-                <button ><a href="otp.html" id="payNow" >Pay Now</a></button>
+            <div class="wallet">
+                <img src="https://cdn.pharmeasy.in/payments/amazonpay_new.png" alt="">
+                <div>
+                    <h2>Amazon Pay</h2>
+                    <p>Guranteed Rs.40 cashback and upto Rs.300 cashback on minimum order of Rs.800</p>
+                </div>
+            </div>
+
+            <div class="wallet">
+                <img src="https://cdn.pharmeasy.in/payments/wallet_icons/phonepe.png" alt="">
+                <div>
+                    <h2>Phonepe</h2>
+                    <p>Guranteed Rs.20 cashback and upto Rs.200 cashback on minimum order of Rs.400</p>
+                </div>
+            </div>
+
+            <div class="wallet">
+                <img src="https://cdn.pharmeasy.in/payments/wallet_icons/mobikwik.png" alt="">
+                <div>
+                    <h2>Mobikwik</h2>
+                    <p>Guranteed Rs.30 cashback and upto Rs.300 cashback on minimum order of Rs.600</p>
+                </div>
+            </div>
+            <div class="wallet">
+                <img src="https://consumer-app-images.pharmeasy.in/payment-icons/cod.png" alt="">
+                <div>
+                    <h2>Cash on delivery</h2>
+                    <p>Pay via Cash/UPI at the time of delivery</p>
+                </div>
+            </div>
+
+            <h2>Select a payment method</h2>
+            <h4>Debit card</h4>
+            <h5>Card Number</h5>
+            <input id="card" type="text" placeholder="Enter your 16 digit card number">
+            <h5>Expiry Date</h5>
+            <div id="exp"><input id="expiryDate" type="date"> <input placeholder="CVV" type="number"></div>
+            <button style="font-size:15px">save card</button>
+            <button id="view" style="font-size:15px"><a id="scd" href="savedCards.html" style="color: white;">view saved
+                    cards</a></button>
+
+
+            <div id="other">
+                <h2>Other Options</h2>
+                <select name="" id="select">
+                    <option value="Cash on delivery">
+
+                        Cash on delivery
+                    </option>
+                    <option value="upi">
+                        UPI
+                    </option>
+
+                </select>
+                <div></div>
+
+                <div id="paynow">
+                    <p>By clicking on Pay Now, you agree to our <a href="termsandconditions.txt" id="tc">Terms and
+                            Conditions</a></p>
+                    <button><a href="otp.html" id="payNow">Pay Now</a></button>
+                </div>
             </div>
         </div>
-    </div>
-    
+
 
 
 
 </body>
+
 </html>
-<script src="payments.js"></script>
+<script src="./script/payments.js"></script>

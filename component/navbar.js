@@ -19,13 +19,13 @@ let navbar = () => {
 <div id="bottombar">
     <div>
         <p>
-            <a href="./order_online_sec/OM.html">Order Medicines</a>
+            <a href="../order_online_sec/OM.html">Order Medicines</a>
         </p>
         <p>
-            <a href="./gpu_3_category/cetogary.html">Healthcare Products</a>
+            <a href="../gpu_3_category/cetogary.html">Healthcare Products</a>
         </p>
         <p>
-            <a href="./gpu_3_lab_test/lab_test.html">Lab Tests</a>
+            <a href="../gpu_3_lab_test/lab_test.html">Lab Tests</a>
         </p>
         <p>
             <a href="">RTPCR</a>

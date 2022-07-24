@@ -7,9 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style/product.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 
 <body>
+    <div id="navbar"></div>
     <div id="top-below-nav">
         <p><a href="">Medicine</a></p>
         <p><a href="">Healthcare</a></p>
@@ -79,6 +83,8 @@
         </div>
         <div id="product"></div>
     </div>
+
+    <div id="footer"></div>
 </body>
 
 </html>
@@ -976,11 +982,16 @@
             append(sort_HtoL)
         };
     };
+</script>
 
+<script src="./script/footer.js" type="module">
 
+    import footer from "./component/footer.js"
+    document.querySelector("#footer").innerHTML = footer();
 
+</script>
 
-
-
-
+<script type="module">
+    import navbar from "./component/navbar.js"
+    document.querySelector("#navbar").innerHTML = navbar();
 </script>

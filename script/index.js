@@ -1,6 +1,11 @@
 import navbar from '../component/navbar.js'
 document.querySelector("#navbar").innerHTML = navbar();
 
+
+import footer from "../component/footer.js"
+document.querySelector("#footer").innerHTML = footer();
+
+
 let i1 = document.querySelector("#i1");
 let i2 = document.querySelector("#i2");
 let i3 = document.querySelector("#i3");
@@ -821,8 +826,6 @@ setInterval(function () {
 
 
 
-// import footer from "./component/footer.js"
-// document.querySelector("#footer").innerHTML = footer()
 
 
 

@@ -78,7 +78,9 @@
     gap: .5rem;
     padding-top:1rem;
 }
-
+.partners{
+  margin-bottom: 20px;
+}
 .partners>h3{
     margin-left: 1rem;
     color: #30363c;
