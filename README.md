@@ -1,6 +1,5 @@
 <h1 align="center" id="title">PHARMEASY CLONE</h1>
 
-<p align="center"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Ffreshdesk.com%2Fresources%2Fcase-study%2Fpharmeasy&psig=AOvVaw3QWeW8K6rK9yxZg_A0OH_c&ust=1668608948120000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCIi84O2ysPsCFQAAAAAdAAAAABAN" alt="project-image"></p>
 
 <p id="description">PharmEasy is an Indian e-pharmacy company that sells medicines, diagnostics and telehealth online.</p>
 
